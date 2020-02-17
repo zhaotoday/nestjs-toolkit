@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import * as bcrypt from "bcryptjs";
-import * as dayjs from "dayjs";
+import dayjs from "dayjs";
 
 @Injectable()
 export class HelpersProvider {
