@@ -17,7 +17,7 @@ export * from "./interfaces/env-config.interface";
 export * from "./interfaces/jwt-options.interface";
 export * from "./interfaces/mp.interface";
 export * from "./interfaces/oa.interface";
-export * from "./interfaces/payment-merchant.interface";
+export * from "./interfaces/merchant.interface";
 export * from "./interfaces/redis.interface";
 export * from "./interfaces/sms.interface";
 export * from "./interfaces/sms-captcha.nterface";

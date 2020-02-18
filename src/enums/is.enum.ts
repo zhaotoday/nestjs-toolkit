@@ -1,4 +1,4 @@
 export enum Is {
-  True = 0,
-  False = 1
+  True = 1,
+  False = 0
 }

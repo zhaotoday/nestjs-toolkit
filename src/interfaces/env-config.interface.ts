@@ -2,7 +2,7 @@ import { SequelizeOptions } from "sequelize-typescript";
 import { RedisInterface } from "./redis.interface";
 import { JwtOptionsInterface } from "./jwt-options.interface";
 import { SmsInterface } from "./sms.interface";
-import { PaymentMerchantInterface } from "./payment-merchant.interface";
+import { MerchantInterface } from "./merchant.interface";
 import { MpInterface } from "./mp.interface";
 import { OaInterface } from "./oa.interface";
 
@@ -21,5 +21,5 @@ export interface EnvConfigInterface {
   sms?: SmsInterface;
   mp?: MpInterface;
   oa?: OaInterface;
-  paymentMerchant?: PaymentMerchantInterface;
+  merchant?: MerchantInterface;
 }

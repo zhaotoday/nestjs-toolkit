@@ -15,22 +15,22 @@ export class WeChatPayProvider {
   }
 
   init(): WeChatPayProvider {
-    const { mp, paymentMerchant } = this._config;
+    const { mp, merchant } = this._config;
 
     this.weChatPay = new WeChatPay({
       appid: mp.appId,
-      mch_id: paymentMerchant.mchId,
-      key: paymentMerchant.secret
+      mch_id: merchant.mchId,
+      key: merchant.secret
     });
 
     return this;
   }
 
   async createUnifiedOrder({ notifyUrl, openId, outTradeNo, amount }) {
-    const { paymentMerchant } = this._config;
+    const { merchant } = this._config;
     const { unifiedOrder, ...extra } = await this.weChatPay.createUnifiedOrder({
       openid: openId,
-      body: paymentMerchant.body,
+      body: merchant.body,
       out_trade_no: outTradeNo,
       total_fee: amount * 100,
       spbill_create_ip: "123.12.12.123",

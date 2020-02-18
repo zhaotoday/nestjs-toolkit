@@ -1,4 +1,4 @@
-export interface PaymentMerchantInterface {
+export interface MerchantInterface {
   mchId: string;
   secret: string;
   body: string;

@@ -1,7 +1,7 @@
 import { MpInterface } from "./mp.interface";
-import { PaymentMerchantInterface } from "./payment-merchant.interface";
+import { MerchantInterface } from "./merchant.interface";
 
 export interface WeChatPayInterface {
   mp: MpInterface;
-  paymentMerchant: PaymentMerchantInterface;
+  merchant: MerchantInterface;
 }
