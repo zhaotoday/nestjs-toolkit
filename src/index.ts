@@ -3,6 +3,7 @@ export * from "./core/base.service";
 
 export * from "./enums/address-tag.enum";
 export * from "./enums/dict-type.enum";
+export * from "./enums/gender.enum";
 export * from "./enums/order-payment.enum";
 export * from './enums/is.enum';
 export * from './enums/order-payment.enum';
