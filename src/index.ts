@@ -1,7 +1,35 @@
 export * from "./core/base.controller";
 export * from "./core/base.service";
 
+export * from "./dtos/ad.dto";
+export * from "./dtos/address.dto";
+export * from "./dtos/category.dto";
+export * from "./dtos/collection.dto";
+export * from "./dtos/dict-param.dto";
+export * from "./dtos/file.dto";
+export * from "./dtos/file-upload.dto";
+export * from "./dtos/manager.dto";
+export * from "./dtos/manager-login.dto";
+export * from "./dtos/order.dto";
+export * from "./dtos/payment-create-unified-order.dto";
+export * from "./dtos/product.dto";
+export * from "./dtos/rbac-resource.dto";
+export * from "./dtos/rbac-role.dto";
+export * from "./dtos/wx-user.dto";
+export * from "./dtos/wx-user-get-openid.dto";
+export * from "./dtos/wx-user-login.dto";
+
 export * from "./entities/ad.entity";
+export * from "./entities/address.entity";
+export * from "./entities/category.entity";
+export * from "./entities/collection.entity";
+export * from "./entities/file.entity";
+export * from "./entities/manager.entity";
+export * from "./entities/order.entity";
+export * from "./entities/product.entity";
+export * from "./entities/rbac-resource.entity";
+export * from "./entities/rbac-role.entity";
+export * from "./entities/wx-user.entity";
 
 export * from "./enums/address-tag.enum";
 export * from "./enums/gender.enum";
