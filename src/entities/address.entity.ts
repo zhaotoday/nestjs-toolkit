@@ -2,14 +2,11 @@ import {
   Table,
   Column,
   Model,
-  DataType,
-  ForeignKey,
-  BelongsTo
+  DataType
 } from "sequelize-typescript";
 import { Is } from "../enums/is.enum";
 import { AddressTag } from "../enums/address-tag.enum";
 import { Gender } from "../enums/gender.enum";
-import { WxUser } from "./wx-user.entity";
 
 @Table({
   tableName: "addresses"
@@ -23,16 +20,6 @@ export class Address extends Model<Address> {
     comment: "ID"
   })
   id: number;
-
-  @ForeignKey(() => WxUser)
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    comment: "微信用户 ID"
-  })
-  wxUserId: number;
-
-  @BelongsTo(() => WxUser)
-  wxUser: WxUser;
 
   @Column({
     type: DataType.STRING(100),

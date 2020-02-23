@@ -2,12 +2,9 @@ import {
   Table,
   Column,
   Model,
-  DataType,
-  ForeignKey,
-  BelongsTo
+  DataType
 } from "sequelize-typescript";
 import { Is } from "../enums/is.enum";
-import { Category } from "./category.entity";
 
 @Table({
   tableName: "products"
@@ -21,16 +18,6 @@ export class Product extends Model<Product> {
     comment: "ID"
   })
   id: number;
-
-  @ForeignKey(() => Category)
-  @Column({
-    type: DataType.INTEGER({ length: 6 }).UNSIGNED,
-    comment: "分类 ID"
-  })
-  categoryId: number;
-
-  @BelongsTo(() => Category)
-  category: Category;
 
   @Column({
     type: DataType.STRING(200),

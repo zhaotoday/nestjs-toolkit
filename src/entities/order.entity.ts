@@ -1,15 +1,6 @@
-import {
-  Column,
-  Model,
-  Table,
-  DataType,
-  ForeignKey,
-  BelongsTo
-} from "sequelize-typescript";
+import { Column, Model, Table, DataType } from "sequelize-typescript";
 import { OrderPayment } from "../enums/order-payment.enum";
 import { OrderStatus } from "../enums/order-status.enum";
-import { WxUser } from "./wx-user.entity";
-import { Address } from "./address.entity";
 
 @Table({
   tableName: "orders"
@@ -24,16 +15,6 @@ export class Order extends Model<Order> {
   })
   id: number;
 
-  @ForeignKey(() => WxUser)
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    comment: "微信用户 ID"
-  })
-  wxUserId: number;
-
-  @BelongsTo(() => WxUser)
-  wxUser: WxUser;
-
   @Column({
     type: DataType.STRING(16),
     comment: "订单号"
@@ -45,16 +26,6 @@ export class Order extends Model<Order> {
     comment: "购买产品"
   })
   products: object;
-
-  @ForeignKey(() => Address)
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    comment: "收获地址 ID"
-  })
-  addressId: number;
-
-  @BelongsTo(() => Address)
-  address: Address;
 
   @Column({
     type: DataType.INTEGER.UNSIGNED,

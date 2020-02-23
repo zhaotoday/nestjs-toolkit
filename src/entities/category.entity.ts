@@ -2,9 +2,7 @@ import {
   Table,
   Column,
   Model,
-  DataType,
-  ForeignKey,
-  BelongsTo
+  DataType
 } from "sequelize-typescript";
 
 @Table({
@@ -19,16 +17,6 @@ export class Category extends Model<Category> {
     comment: "ID"
   })
   id: number;
-
-  @ForeignKey(() => Category)
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    comment: "父级 ID"
-  })
-  parentId: number;
-
-  @BelongsTo(() => Category)
-  parent: Category;
 
   @Column({
     type: DataType.STRING(200),
