@@ -1,5 +1,5 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { Is } from "nestjs-toolkit";
+import { Is } from "../enums/is.enum";
 
 export class AdDto {
   @ApiProperty({

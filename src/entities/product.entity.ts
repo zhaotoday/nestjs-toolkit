@@ -6,7 +6,7 @@ import {
   ForeignKey,
   BelongsTo
 } from "sequelize-typescript";
-import { Is } from "nestjs-toolkit";
+import { Is } from "../enums/is.enum";
 import { Category } from "./category.entity";
 
 @Table({

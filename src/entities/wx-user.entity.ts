@@ -1,6 +1,6 @@
 import { Table, Column, Model, DataType } from "sequelize-typescript";
-import { Is } from "nestjs-toolkit";
-import { Gender } from "nestjs-toolkit";
+import { Is } from "../enums/is.enum";
+import { Gender } from "../enums/gender.enum";
 
 @Table({
   tableName: "wxUsers"

@@ -6,10 +6,10 @@ import {
   ForeignKey,
   BelongsTo
 } from "sequelize-typescript";
-import { OrderPayment, OrderStatus } from "nestjs-toolkit";
+import { OrderPayment } from "../enums/order-payment.enum";
+import { OrderStatus } from "../enums/order-status.enum";
 import { WxUser } from "./wx-user.entity";
 import { Address } from "./address.entity";
-import { Ad } from "./ad.entity";
 
 @Table({
   tableName: "orders"

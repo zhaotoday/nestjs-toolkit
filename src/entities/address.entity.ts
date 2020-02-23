@@ -6,7 +6,9 @@ import {
   ForeignKey,
   BelongsTo
 } from "sequelize-typescript";
-import { Is, AddressTag, Gender } from "nestjs-toolkit";
+import { Is } from "../enums/is.enum";
+import { AddressTag } from "../enums/address-tag.enum";
+import { Gender } from "../enums/gender.enum";
 import { WxUser } from "./wx-user.entity";
 
 @Table({

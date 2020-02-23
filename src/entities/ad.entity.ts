@@ -1,5 +1,5 @@
 import { Table, Column, Model, DataType } from "sequelize-typescript";
-import { Is } from "nestjs-toolkit";
+import { Is } from "../enums/is.enum";
 
 @Table({
   tableName: "ads"

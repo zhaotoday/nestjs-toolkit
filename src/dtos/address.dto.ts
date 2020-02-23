@@ -1,5 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { Is, AddressTag } from "nestjs-toolkit";
+import { Is } from "../enums/is.enum";
+import { AddressTag } from "../enums/address-tag.enum";
 
 export class AddressDto {
   @ApiProperty({

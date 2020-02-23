@@ -1,5 +1,5 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { OrderPayment } from "nestjs-toolkit";
+import { OrderPayment } from "../enums/order-payment.enum";
 
 export class PaymentCreateUnifiedOrderDto {
   @ApiProperty({
