@@ -16,8 +16,10 @@ export * from "./dtos/product.dto";
 export * from "./dtos/rbac-resource.dto";
 export * from "./dtos/rbac-role.dto";
 export * from "./dtos/wx-user.dto";
+export * from "./dtos/wx-user-bind-phone-number.dto";
 export * from "./dtos/wx-user-get-openid.dto";
 export * from "./dtos/wx-user-login.dto";
+export * from "./dtos/wx-user-send-captcha.dto";
 
 export * from "./entities/ad.entity";
 export * from "./entities/address.entity";
