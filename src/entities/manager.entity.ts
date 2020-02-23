@@ -2,9 +2,9 @@ import { Table, Column, Model, DataType } from "sequelize-typescript";
 import { Is } from "nestjs-toolkit";
 
 @Table({
-  tableName: "ads"
+  tableName: "managers"
 })
-export class Ad extends Model<Ad> {
+export class Manager extends Model<Manager> {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,
@@ -15,22 +15,22 @@ export class Ad extends Model<Ad> {
   id: number;
 
   @Column({
-    type: DataType.STRING(200),
-    comment: "标题"
+    type: DataType.STRING(50),
+    comment: "用户名"
   })
-  title: string;
+  username: string;
 
   @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    comment: "图片 ID"
+    type: DataType.STRING(100),
+    comment: "密码"
   })
-  picture: number;
+  password: string;
 
   @Column({
-    type: DataType.STRING(200),
-    comment: "链接"
+    type: DataType.JSON,
+    comment: "角色"
   })
-  link: string;
+  roles: object;
 
   @Column({
     type: DataType.TINYINT({ length: 1 }),
