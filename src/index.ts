@@ -40,8 +40,6 @@ export * from "./enums/is.enum";
 export * from "./enums/order-payment.enum";
 export * from "./enums/order-status.enum";
 
-export * from "./filters/all-exceptions.filter";
-
 export * from "./interfaces/base-config.interface";
 export * from "./interfaces/captcha.interface";
 export * from "./interfaces/config.interface";
