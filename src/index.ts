@@ -55,6 +55,8 @@ export * from "./interfaces/sms-template-ids.interface";
 export * from "./interfaces/storage.interface";
 export * from "./interfaces/wechatpay.interface";
 
+export * from "./middlewares/query.middleware";
+
 export * from "./shared/helpers.provider";
 export * from "./shared/redis.provider";
 export * from "./shared/sms.provider";
