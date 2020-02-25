@@ -1,7 +1,6 @@
 {
-  "include": ["src", "types", "test"],
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "commonjs",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
@@ -10,7 +9,7 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "incremental": true,
-    "allowSyntheticDefaultImports": true
-  }
+    "incremental": true
+  },
+  "exclude": ["node_modules", "dist"]
 }
