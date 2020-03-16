@@ -2,6 +2,12 @@ import { ApiProperty } from "@nestjs/swagger";
 
 export class PointDto {
   @ApiProperty({
+    description: "微信用户 ID",
+    example: 1
+  })
+  wxUserId: number;
+
+  @ApiProperty({
     description: "类型",
     example: "POINT_CONSUMPTION"
   })
@@ -23,10 +29,4 @@ export class PointDto {
     }
   })
   data: object;
-
-  @ApiProperty({
-    description: "微信用户 ID",
-    example: 1
-  })
-  wxUserId: number;
 }
