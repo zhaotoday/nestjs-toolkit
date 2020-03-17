@@ -34,6 +34,12 @@ export class WxUser extends Model<WxUser> {
   avatarUrl: string;
 
   @Column({
+    type: DataType.INTEGER.UNSIGNED,
+    comment: "自定义头像 ID"
+  })
+  avatarId: number;
+
+  @Column({
     type: DataType.STRING(100),
     comment: "姓名",
     defaultValue: ""

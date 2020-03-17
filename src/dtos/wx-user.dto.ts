@@ -22,6 +22,12 @@ export class WxUserDto {
   readonly avatarUrl: string;
 
   @ApiProperty({
+    description: "自定义头像 ID",
+    example: 1
+  })
+  readonly avatarId: number;
+
+  @ApiProperty({
     description: "姓名",
     example: "赵金添"
   })
