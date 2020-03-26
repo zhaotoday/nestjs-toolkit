@@ -24,7 +24,7 @@ export class Ad extends Model<Ad> {
     type: DataType.INTEGER.UNSIGNED,
     comment: "图片 ID"
   })
-  picture: number;
+  pictureId: number;
 
   @Column({
     type: DataType.STRING(200),

@@ -41,9 +41,9 @@ export class WxUserDto {
 
   @ApiProperty({
     description: "性别",
-    example: "1"
+    example: 1
   })
-  readonly gender: string;
+  readonly gender: number;
 
   @ApiProperty({
     description: "手机号",
