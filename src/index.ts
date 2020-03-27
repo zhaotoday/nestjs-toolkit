@@ -3,6 +3,7 @@ export * from "./core/base.service";
 
 export * from "./dtos/ad.dto";
 export * from "./dtos/address.dto";
+export * from "./dtos/article.dto";
 export * from "./dtos/category.dto";
 export * from "./dtos/collection.dto";
 export * from "./dtos/dict-param.dto";
@@ -25,6 +26,7 @@ export * from "./dtos/wx-user-send-captcha.dto";
 
 export * from "./entities/ad.entity";
 export * from "./entities/address.entity";
+export * from "./entities/article.entity";
 export * from "./entities/category.entity";
 export * from "./entities/collection.entity";
 export * from "./entities/file.entity";
