@@ -2,6 +2,12 @@ import { ApiProperty } from "@nestjs/swagger";
 
 export class ArticleDto {
   @ApiProperty({
+    description: "分类 ID",
+    example: 1
+  })
+  categoryId: number;
+
+  @ApiProperty({
     description: "标题",
     example: "截至3月26日24时新型冠状病毒肺炎疫情最新情况"
   })
@@ -44,10 +50,4 @@ export class ArticleDto {
     example: 1
   })
   status: number;
-
-  @ApiProperty({
-    description: "分类 ID",
-    example: 1
-  })
-  categoryId: number;
 }

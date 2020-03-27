@@ -1,12 +1,5 @@
-import {
-  Table,
-  Column,
-  Model,
-  DataType,
-  ForeignKey
-} from "sequelize-typescript";
+import { Table, Column, Model, DataType } from "sequelize-typescript";
 import { Is } from "../enums/is.enum";
-import { Category } from "./category.entity";
 
 @Table({
   tableName: "articles"
@@ -63,11 +56,4 @@ export class Article extends Model<Article> {
     defaultValue: Is.True
   })
   status: number;
-
-  @ForeignKey(() => Category)
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    comment: "分类 ID"
-  })
-  categoryId: number;
 }
