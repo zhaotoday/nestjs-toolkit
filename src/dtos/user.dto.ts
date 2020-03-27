@@ -15,10 +15,10 @@ export class UserDto {
   phoneNumber: string;
 
   @ApiProperty({
-    description: "角色 ID",
-    example: 2
+    description: "角色",
+    example: "Deliverer"
   })
-  roleId: number;
+  role: string;
 
   @ApiProperty({
     description: "微信用户 ID",

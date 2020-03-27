@@ -35,10 +35,10 @@ export class User extends Model<User> {
   phoneNumber: string;
 
   @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    comment: "角色 ID"
+    type: DataType.STRING(50),
+    comment: "角色"
   })
-  roleId: number;
+  role: string;
 
   @ForeignKey(() => WxUser)
   @Column({
