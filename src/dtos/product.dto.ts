@@ -36,7 +36,7 @@ export class ProductDto {
     description: "图片 ID",
     example: 1
   })
-  picture: number;
+  pictureId: number;
 
   @ApiProperty({
     description: "描述",
