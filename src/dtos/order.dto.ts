@@ -60,4 +60,10 @@ export class OrderDto {
     example: OrderStatus.ToPay
   })
   status: string;
+
+  @ApiProperty({
+    description: "配送员用户 ID",
+    example: 1
+  })
+  delivererUserId: number;
 }

@@ -64,4 +64,10 @@ export class Order extends Model<Order> {
     defaultValue: OrderStatus.ToPay
   })
   status: string;
+
+  @Column({
+    type: DataType.INTEGER.UNSIGNED,
+    comment: "配送员用户 ID"
+  })
+  delivererUserId: number;
 }
