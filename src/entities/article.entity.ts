@@ -52,6 +52,20 @@ export class Article extends Model<Article> {
 
   @Column({
     type: DataType.TINYINT({ length: 1 }),
+    comment: "是否热门",
+    defaultValue: Is.False
+  })
+  hot: number;
+
+  @Column({
+    type: DataType.TINYINT({ length: 1 }),
+    comment: "是否置顶",
+    defaultValue: Is.False
+  })
+  top: number;
+
+  @Column({
+    type: DataType.TINYINT({ length: 1 }),
     comment: "状态",
     defaultValue: Is.True
   })

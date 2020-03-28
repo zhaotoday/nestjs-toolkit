@@ -46,6 +46,18 @@ export class ArticleDto {
   link: string;
 
   @ApiProperty({
+    description: "是否热门",
+    example: 0
+  })
+  hot: number;
+
+  @ApiProperty({
+    description: "是否置顶",
+    example: 0
+  })
+  top: number;
+
+  @ApiProperty({
     description: "状态",
     example: 1
   })
