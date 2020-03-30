@@ -21,6 +21,7 @@ export * from "./dtos/rbac-role.dto";
 export * from "./dtos/user.dto";
 export * from "./dtos/wx-user.dto";
 export * from "./dtos/wx-user-bind-phone-number.dto";
+export * from "./dtos/wx-user-coupon.dto";
 export * from "./dtos/wx-user-get-openid.dto";
 export * from "./dtos/wx-user-login.dto";
 export * from "./dtos/wx-user-send-captcha.dto";
@@ -40,6 +41,7 @@ export * from "./entities/rbac-resource.entity";
 export * from "./entities/rbac-role.entity";
 export * from "./entities/user.entity";
 export * from "./entities/wx-user.entity";
+export * from "./entities/wx-user-coupon.entity";
 
 export * from "./enums/address-tag.enum";
 export * from "./enums/coupon.enum";
