@@ -1,6 +1,5 @@
 import { Table, Column, Model, DataType } from "sequelize-typescript";
 import { Is } from "../enums/is.enum";
-import { ApiProperty } from "@nestjs/swagger";
 
 @Table({
   tableName: "coupons"
@@ -15,9 +14,9 @@ export class Coupon extends Model<Coupon> {
   })
   id: number;
 
-  @ApiProperty({
-    description: "优惠券号",
-    example: "2001011106289214"
+  @Column({
+    type: DataType.STRING(16),
+    comment: "优惠券号"
   })
   no: string;
 
@@ -55,7 +54,7 @@ export class Coupon extends Model<Coupon> {
 
   @Column({
     type: DataType.JSON,
-    comment: "指定分类 ID 集合"
+    comment: "指定商品分类 ID 集合"
   })
   categoryIds: number[];
 
@@ -67,7 +66,7 @@ export class Coupon extends Model<Coupon> {
 
   @Column({
     type: DataType.TINYINT({ length: 3 }),
-    comment: "有效期，单位天"
+    comment: "有效期，单：位天"
   })
   period: number;
 
