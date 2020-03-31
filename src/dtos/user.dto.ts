@@ -3,6 +3,12 @@ import { Is } from "../enums/is.enum";
 
 export class UserDto {
   @ApiProperty({
+    description: "微信用户 ID",
+    example: 1
+  })
+  wxUserId: number;
+
+  @ApiProperty({
     description: "姓名",
     example: "赵金添"
   })
@@ -19,12 +25,6 @@ export class UserDto {
     example: "Deliverer"
   })
   role: string;
-
-  @ApiProperty({
-    description: "微信用户 ID",
-    example: 1
-  })
-  wxUserId: number;
 
   @ApiProperty({
     description: "状态",

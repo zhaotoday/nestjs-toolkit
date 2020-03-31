@@ -7,7 +7,7 @@ export class AddressDto {
     description: "微信用户 ID",
     example: 1
   })
-  wxUserId: string;
+  wxUserId: number;
 
   @ApiProperty({
     description: "收货人",
