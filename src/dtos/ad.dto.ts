@@ -25,4 +25,10 @@ export class AdDto {
     example: Is.True
   })
   status: number;
+
+  @ApiProperty({
+    description: "排序",
+    example: 1
+  })
+  order: number;
 }

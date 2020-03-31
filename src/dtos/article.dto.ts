@@ -62,4 +62,10 @@ export class ArticleDto {
     example: 1
   })
   status: number;
+
+  @ApiProperty({
+    description: "排序",
+    example: 1
+  })
+  order: number;
 }

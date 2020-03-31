@@ -84,4 +84,10 @@ export class Product extends Model<Product> {
     defaultValue: Is.True
   })
   status: number;
+
+  @Column({
+    type: DataType.INTEGER.UNSIGNED,
+    comment: "排序"
+  })
+  order: number;
 }

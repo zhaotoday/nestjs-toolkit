@@ -1,9 +1,4 @@
-import {
-  Table,
-  Column,
-  Model,
-  DataType
-} from "sequelize-typescript";
+import { Table, Column, Model, DataType } from "sequelize-typescript";
 
 @Table({
   tableName: "categories"
@@ -41,4 +36,10 @@ export class Category extends Model<Category> {
     comment: "描述"
   })
   description: string;
+
+  @Column({
+    type: DataType.INTEGER.UNSIGNED,
+    comment: "排序"
+  })
+  order: number;
 }

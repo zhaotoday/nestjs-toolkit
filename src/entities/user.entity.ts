@@ -56,4 +56,10 @@ export class User extends Model<User> {
     defaultValue: Is.True
   })
   status: number;
+
+  @Column({
+    type: DataType.INTEGER.UNSIGNED,
+    comment: "排序"
+  })
+  order: number;
 }

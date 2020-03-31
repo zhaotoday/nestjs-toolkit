@@ -30,4 +30,10 @@ export class CategoryDto {
     example: "这是描述"
   })
   description: string;
+
+  @ApiProperty({
+    description: "排序",
+    example: 1
+  })
+  order: number;
 }

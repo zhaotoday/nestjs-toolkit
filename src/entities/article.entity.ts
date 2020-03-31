@@ -70,4 +70,10 @@ export class Article extends Model<Article> {
     defaultValue: Is.True
   })
   status: number;
+
+  @Column({
+    type: DataType.INTEGER.UNSIGNED,
+    comment: "排序"
+  })
+  order: number;
 }

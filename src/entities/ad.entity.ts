@@ -38,4 +38,10 @@ export class Ad extends Model<Ad> {
     defaultValue: Is.True
   })
   status: number;
+
+  @Column({
+    type: DataType.INTEGER.UNSIGNED,
+    comment: "排序"
+  })
+  order: number;
 }
