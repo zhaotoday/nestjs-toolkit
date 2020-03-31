@@ -1,6 +1,5 @@
 import * as jwt from "jsonwebtoken";
 import { JwtOptionsInterface } from "../interfaces/jwt-options.interface";
-import { OrderAction } from "../enums/order-action.enum";
 
 export class BaseController {
   public jwtConfig: JwtOptionsInterface;
