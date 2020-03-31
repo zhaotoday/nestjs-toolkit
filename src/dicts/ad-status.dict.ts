@@ -1,4 +1,4 @@
-export const AdStatus = [
+export const AdStatusDict = [
   {
     value: 1,
     label: "上架"

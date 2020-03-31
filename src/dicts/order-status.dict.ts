@@ -1,4 +1,4 @@
-export const OrderStatus = [
+export const OrderStatusDict = [
   {
     value: "ToPay",
     label: "待付款"

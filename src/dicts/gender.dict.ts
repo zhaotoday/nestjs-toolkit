@@ -1,4 +1,4 @@
-export const Gender = [
+export const GenderDict = [
   {
     value: 0,
     label: "未知"

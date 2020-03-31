@@ -1,4 +1,4 @@
-export const OrderPayment = [
+export const OrderPaymentDict = [
   {
     value: "WeChatPay",
     label: "微信支付"

@@ -1,4 +1,4 @@
-export const Status = [
+export const StatusDict = [
   {
     value: 1,
     label: "激活"
