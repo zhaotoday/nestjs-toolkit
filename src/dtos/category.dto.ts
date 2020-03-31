@@ -32,6 +32,12 @@ export class CategoryDto {
   description: string;
 
   @ApiProperty({
+    description: "别名",
+    example: "products"
+  })
+  alias: string;
+
+  @ApiProperty({
     description: "排序",
     example: 1
   })

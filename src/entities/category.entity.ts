@@ -38,6 +38,12 @@ export class Category extends Model<Category> {
   description: string;
 
   @Column({
+    type: DataType.STRING(50),
+    comment: "别名"
+  })
+  alias: string;
+
+  @Column({
     type: DataType.INTEGER.UNSIGNED,
     comment: "排序"
   })
