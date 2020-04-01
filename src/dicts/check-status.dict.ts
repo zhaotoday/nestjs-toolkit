@@ -1,4 +1,4 @@
-export const CheckStatus = [
+export const CheckStatusDict = [
   {
     value: 1,
     label: "通过"
