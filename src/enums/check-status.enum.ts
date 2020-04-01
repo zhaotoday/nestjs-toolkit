@@ -1,5 +1,5 @@
 export enum CheckStatus {
-  Approved = "Approved",
-  Rejected = "Rejected",
-  Checking = "Checking"
+  Approved = 1,
+  Rejected = -1,
+  Checking = 0
 }
