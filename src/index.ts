@@ -1,13 +1,11 @@
 export * from "./core/base.controller";
 export * from "./core/base.service";
 
-export * from "./dicts/ad-status.dict";
-export * from "./dicts/article-status.dict";
+export * from "./dicts/enable-status.dict";
 export * from "./dicts/gender.dict";
 export * from "./dicts/order-payment.dict";
 export * from "./dicts/order-status.dict";
-export * from "./dicts/product-status.dict";
-export * from "./dicts/status.dict";
+export * from "./dicts/publish-status.dict";
 
 export * from "./dtos/ad.dto";
 export * from "./dtos/address.dto";

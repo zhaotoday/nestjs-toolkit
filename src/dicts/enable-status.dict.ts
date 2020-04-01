@@ -1,4 +1,4 @@
-export const StatusDict = [
+export const EnableStatusDict = [
   {
     value: 1,
     label: "激活"
