@@ -1,9 +1,4 @@
-import {
-  Table,
-  Column,
-  Model,
-  DataType
-} from "sequelize-typescript";
+import { Table, Column, Model, DataType } from "sequelize-typescript";
 import { Is } from "../enums/is.enum";
 
 @Table({
@@ -47,10 +42,10 @@ export class Product extends Model<Product> {
   stock: number;
 
   @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    comment: "图片 ID"
+    type: DataType.JSON,
+    comment: "图片 ID 集合"
   })
-  pictureId: number;
+  pictureIds: number[];
 
   @Column({
     type: DataType.TEXT({ length: "tiny" }),

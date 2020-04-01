@@ -33,10 +33,10 @@ export class ProductDto {
   stock: number;
 
   @ApiProperty({
-    description: "图片 ID",
+    description: "图片 ID 集合",
     example: 1
   })
-  pictureId: number;
+  pictureIds: number[];
 
   @ApiProperty({
     description: "描述",
