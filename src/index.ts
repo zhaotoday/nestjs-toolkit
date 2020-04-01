@@ -55,6 +55,7 @@ export * from "./entities/wx-user.entity";
 export * from "./entities/wx-user-coupon.entity";
 
 export * from "./enums/address-tag.enum";
+export * from "./enums/check-status.enum";
 export * from "./enums/coupon.enum";
 export * from "./enums/gender.enum";
 export * from "./enums/order-payment.enum";
