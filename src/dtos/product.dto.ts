@@ -34,7 +34,7 @@ export class ProductDto {
 
   @ApiProperty({
     description: "图片 ID 集合",
-    example: 1
+    example: [1, 2, 3]
   })
   pictureIds: number[];
 
