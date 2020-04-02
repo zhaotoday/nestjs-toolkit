@@ -27,6 +27,12 @@ export class Merchant extends Model<Merchant> {
   pictureIds: number[];
 
   @Column({
+    type: DataType.STRING(50),
+    comment: "联系人"
+  })
+  contactName: string;
+
+  @Column({
     type: DataType.STRING(11),
     comment: "手机号"
   })

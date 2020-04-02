@@ -27,6 +27,12 @@ export class MerchantDto {
   pictureIds: number[];
 
   @ApiProperty({
+    description: "联系人",
+    example: "赵金添"
+  })
+  contactName: string;
+
+  @ApiProperty({
     description: "手机号",
     example: "13950442340"
   })
