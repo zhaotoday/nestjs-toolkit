@@ -1,6 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { Is } from "../enums/is.enum";
-import { CouponType } from "../enums/coupon.enum";
+import { CouponType } from "../enums/coupon-type.enum";
 
 export class CouponDto {
   @ApiProperty({
