@@ -2,6 +2,7 @@ export * from "./core/base.controller";
 export * from "./core/base.service";
 
 export * from "./dicts/check-status.dict";
+export * from "./dicts/coupon-type.dict";
 export * from "./dicts/enable-status.dict";
 export * from "./dicts/gender.dict";
 export * from "./dicts/order-payment.dict";
@@ -56,7 +57,7 @@ export * from "./entities/wx-user-coupon.entity";
 
 export * from "./enums/address-tag.enum";
 export * from "./enums/check-status.enum";
-export * from "./enums/coupon.enum";
+export * from "./enums/coupon-type.enum";
 export * from "./enums/gender.enum";
 export * from "./enums/order-payment.enum";
 export * from "./enums/is.enum";
