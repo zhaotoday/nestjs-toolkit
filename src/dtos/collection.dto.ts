@@ -8,8 +8,8 @@ export class CollectionDto {
   wxUserId: number;
 
   @ApiProperty({
-    description: "收藏的商品 ID",
-    example: 1
+    description: "收藏的商品 ID 集合",
+    example: [1, 2, 3]
   })
-  productId: number;
+  productId: number[];
 }
