@@ -1,6 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 
-export class CollectionUpdateDto {
+export class CollectionUpdateProductIdsDto {
   @ApiProperty({
     description: "收藏的商品 ID",
     example: 1
