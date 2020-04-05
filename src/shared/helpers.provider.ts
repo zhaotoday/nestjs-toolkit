@@ -45,4 +45,16 @@ export class HelpersProvider {
         return {};
     }
   }
+
+  async getDeletedIds(repository, ids): Promise<number[]> {
+    const deletedRes = await repository.findAll({
+      paranoid: false,
+      where: {
+        id: { $in: ids },
+        deletedAt: { $not: null }
+      }
+    });
+
+    return deletedRes[0] ? deletedRes.map(item => item.id) : [];
+  }
 }
