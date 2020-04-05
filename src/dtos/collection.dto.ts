@@ -11,5 +11,5 @@ export class CollectionDto {
     description: "收藏的商品 ID 集合",
     example: [1, 2, 3]
   })
-  productId: number[];
+  productIds: number[];
 }

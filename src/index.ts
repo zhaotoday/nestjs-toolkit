@@ -15,6 +15,7 @@ export * from "./dtos/address.dto";
 export * from "./dtos/article.dto";
 export * from "./dtos/category.dto";
 export * from "./dtos/collection.dto";
+export * from "./dtos/collection-update.dto";
 export * from "./dtos/comment.dto";
 export * from "./dtos/coupon.dto";
 export * from "./dtos/dict-param.dto";
