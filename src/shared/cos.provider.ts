@@ -9,7 +9,7 @@ export class CosProvider {
 
   private _config: CosInterface;
 
-  config(options): CosProvider {
+  config(options: CosInterface): CosProvider {
     this._config = options;
     return this;
   }

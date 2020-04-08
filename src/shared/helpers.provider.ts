@@ -4,6 +4,12 @@ import * as dayjs from "dayjs";
 
 @Injectable()
 export class HelpersProvider {
+  sleep(time) {
+    return new Promise(resolve => {
+      setTimeout(resolve, time);
+    });
+  }
+
   getRandom(n): string {
     let ret = "";
 
