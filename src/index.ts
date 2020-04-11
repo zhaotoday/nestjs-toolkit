@@ -13,7 +13,6 @@ export * from "./dicts/publish-status.dict";
 
 export * from "./dtos/ad.dto";
 export * from "./dtos/address.dto";
-export * from "./dtos/address-set-default.dto";
 export * from "./dtos/article.dto";
 export * from "./dtos/category.dto";
 export * from "./dtos/collection.dto";
