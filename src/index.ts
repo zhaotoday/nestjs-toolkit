@@ -1,6 +1,7 @@
 export * from "./core/base.controller";
 export * from "./core/base.service";
 
+export * from "./dicts/address-tag.dict";
 export * from "./dicts/check-status.dict";
 export * from "./dicts/coupon-object-type.dict";
 export * from "./dicts/coupon-type.dict";
