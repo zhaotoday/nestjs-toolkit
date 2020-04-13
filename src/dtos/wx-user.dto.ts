@@ -26,14 +26,14 @@ export class WxUserDto {
     example: 1
   })
   @ApiPropertyOptional()
-  readonly avatarId: number;
+  readonly avatarId?: number;
 
   @ApiProperty({
     description: "姓名",
     example: "赵金添"
   })
   @ApiPropertyOptional()
-  readonly name: string;
+  readonly name?: string;
 
   @ApiProperty({
     description: "昵称",
@@ -52,14 +52,14 @@ export class WxUserDto {
     example: "13950442340"
   })
   @ApiPropertyOptional()
-  readonly phoneNumber: string;
+  readonly phoneNumber?: string;
 
   @ApiProperty({
     description: "生日",
     example: "1985-02-05"
   })
   @ApiPropertyOptional()
-  readonly birthday: string;
+  readonly birthday?: string;
 
   @ApiProperty({
     description: "语言",
@@ -89,11 +89,11 @@ export class WxUserDto {
     description: "所有数据"
   })
   @ApiPropertyOptional()
-  readonly data: string;
+  readonly data?: string;
 
   @ApiProperty({
     description: "状态",
-    example: Is.True
+    example?: Is.True
   })
   @ApiPropertyOptional()
   readonly status: number;
