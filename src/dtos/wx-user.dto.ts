@@ -1,4 +1,4 @@
-import { ApiProperty } from "@nestjs/swagger";
+import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { Is } from "../enums/is.enum";
 
 export class WxUserDto {
@@ -25,12 +25,14 @@ export class WxUserDto {
     description: "自定义头像 ID",
     example: 1
   })
+  @ApiPropertyOptional()
   readonly avatarId: number;
 
   @ApiProperty({
     description: "姓名",
     example: "赵金添"
   })
+  @ApiPropertyOptional()
   readonly name: string;
 
   @ApiProperty({
@@ -49,12 +51,14 @@ export class WxUserDto {
     description: "手机号",
     example: "13950442340"
   })
+  @ApiPropertyOptional()
   readonly phoneNumber: string;
 
   @ApiProperty({
     description: "生日",
     example: "1985-02-05"
   })
+  @ApiPropertyOptional()
   readonly birthday: string;
 
   @ApiProperty({
@@ -84,11 +88,13 @@ export class WxUserDto {
   @ApiProperty({
     description: "所有数据"
   })
+  @ApiPropertyOptional()
   readonly data: string;
 
   @ApiProperty({
     description: "状态",
     example: Is.True
   })
+  @ApiPropertyOptional()
   readonly status: number;
 }
