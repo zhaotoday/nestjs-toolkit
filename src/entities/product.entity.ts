@@ -74,6 +74,12 @@ export class Product extends Model<Product> {
   recommended: number;
 
   @Column({
+    type: DataType.INTEGER.UNSIGNED,
+    comment: "佣金比例"
+  })
+  commissionRate: number;
+
+  @Column({
     type: DataType.TINYINT({ length: 1 }),
     comment: "是否上架",
     defaultValue: Is.True
