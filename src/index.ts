@@ -32,6 +32,7 @@ export * from "./dtos/product.dto";
 export * from "./dtos/rbac-resource.dto";
 export * from "./dtos/rbac-role.dto";
 export * from "./dtos/user.dto";
+export * from "./dtos/wx-api-jssdk-config";
 export * from "./dtos/wx-user.dto";
 export * from "./dtos/wx-user-bind-phone-number.dto";
 export * from "./dtos/wx-user-coupon.dto";
