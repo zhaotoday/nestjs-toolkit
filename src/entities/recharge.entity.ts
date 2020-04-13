@@ -2,7 +2,7 @@ import { Table, Column, Model, DataType } from "sequelize-typescript";
 import { OrderStatus } from "../enums/order-status.enum";
 
 @Table({
-  tableName: "recharge"
+  tableName: "recharges"
 })
 export class Recharge extends Model<Recharge> {
   @Column({
