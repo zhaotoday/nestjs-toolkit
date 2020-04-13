@@ -93,8 +93,8 @@ export class WxUserDto {
 
   @ApiProperty({
     description: "状态",
-    example?: Is.True
+    example: Is.True
   })
   @ApiPropertyOptional()
-  readonly status: number;
+  readonly status?: number;
 }
