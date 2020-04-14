@@ -1,5 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { OrderPayment } from "../enums/order-payment.enum";
+import { WxUserLoginType } from "../enums/wx-user-login-type.enum";
 
 export class PaymentCreateUnifiedOrderDto {
   @ApiProperty({
@@ -7,6 +8,12 @@ export class PaymentCreateUnifiedOrderDto {
     example: 1
   })
   id: number;
+
+  @ApiProperty({
+    description: "微信用户登录类型",
+    example: WxUserLoginType.Mp
+  })
+  wxUserLoginType: string;
 
   @ApiProperty({
     description: "购买产品"
