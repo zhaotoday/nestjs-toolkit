@@ -2,6 +2,7 @@ import { Injectable } from "@nestjs/common";
 import * as WeChatPay from "wechatpay.js";
 import { WeChatPayInterface } from "../interfaces/wechatpay.interface";
 import { Request } from "express";
+import { WxUserLoginType } from "..";
 
 @Injectable()
 export class WeChatPayProvider {
@@ -14,11 +15,11 @@ export class WeChatPayProvider {
     return this;
   }
 
-  init({ type = "Mp" }): WeChatPayProvider {
+  init({ type = WxUserLoginType.Mp } = {}): WeChatPayProvider {
     const { mp, oa, merchant } = this._config;
 
     this.weChatPay = new WeChatPay({
-      appid: type === "Mp" ? mp.appId : oa.appId,
+      appid: type === WxUserLoginType.Mp ? mp.appId : oa.appId,
       mch_id: merchant.mchId,
       key: merchant.secret
     });
