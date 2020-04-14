@@ -3,7 +3,7 @@ import { MerchantInterface } from "./merchant.interface";
 import { OaInterface } from "./oa.interface";
 
 export interface WeChatPayInterface {
-  mp: MpInterface;
-  oa: OaInterface;
+  mp?: MpInterface;
+  oa?: OaInterface;
   merchant: MerchantInterface;
 }
