@@ -14,11 +14,11 @@ export class WeChatPayProvider {
     return this;
   }
 
-  init(): WeChatPayProvider {
-    const { mp, merchant } = this._config;
+  init({ type = "Mp" }): WeChatPayProvider {
+    const { mp, oa, merchant } = this._config;
 
     this.weChatPay = new WeChatPay({
-      appid: mp.appId,
+      appid: type === "Mp" ? mp.appId : oa.appId,
       mch_id: merchant.mchId,
       key: merchant.secret
     });
