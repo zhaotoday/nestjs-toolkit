@@ -1,9 +1,9 @@
 import { Table, Column, Model, DataType } from "sequelize-typescript";
 
 @Table({
-  tableName: "collections"
+  tableName: "boughtProducts"
 })
-export class Collection extends Model<Collection> {
+export class BoughtProduct extends Model<BoughtProduct> {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,
@@ -15,7 +15,7 @@ export class Collection extends Model<Collection> {
 
   @Column({
     type: DataType.JSON,
-    comment: "已收藏的商品 ID 集合"
+    comment: "已购买的商品 ID 集合"
   })
   productIds: number[];
 }
