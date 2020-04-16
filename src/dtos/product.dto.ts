@@ -73,4 +73,10 @@ export class ProductDto {
     example: 1
   })
   order: number;
+
+  @ApiProperty({
+    description: "销量",
+    example: 1
+  })
+  sales: number;
 }

@@ -91,4 +91,11 @@ export class Product extends Model<Product> {
     comment: "排序"
   })
   order: number;
+
+  @Column({
+    type: DataType.FLOAT(10),
+    comment: "销量",
+    defaultValue: 0
+  })
+  sales: number;
 }
