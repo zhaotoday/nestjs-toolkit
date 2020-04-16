@@ -1,4 +1,4 @@
-import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger'
+import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { Is } from "../enums/is.enum";
 
 export class ProductDto {

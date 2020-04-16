@@ -1,9 +1,4 @@
-import {
-  Table,
-  Column,
-  Model,
-  DataType
-} from "sequelize-typescript";
+import { Column, DataType, Model, Table } from "sequelize-typescript";
 import { Is } from "../enums/is.enum";
 import { AddressTag } from "../enums/address-tag.enum";
 import { Gender } from "../enums/gender.enum";

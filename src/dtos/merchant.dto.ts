@@ -1,4 +1,4 @@
-import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger'
+import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { CheckStatus } from "../enums/check-status.enum";
 
 export class MerchantDto {

@@ -1,4 +1,4 @@
-import { Column, Model, Table, DataType } from "sequelize-typescript";
+import { Column, DataType, Model, Table } from "sequelize-typescript";
 import { OrderPayment } from "../enums/order-payment.enum";
 import { OrderStatus } from "../enums/order-status.enum";
 

@@ -1,10 +1,10 @@
 import {
-  Table,
-  Column,
-  Model,
-  DataType,
   BelongsTo,
-  ForeignKey
+  Column,
+  DataType,
+  ForeignKey,
+  Model,
+  Table
 } from "sequelize-typescript";
 import { WxUser } from "./wx-user.entity";
 import { Is } from "../enums/is.enum";

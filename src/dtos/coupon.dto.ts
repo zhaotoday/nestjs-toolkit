@@ -1,4 +1,4 @@
-import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger'
+import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { Is } from "../enums/is.enum";
 import { CouponType } from "../enums/coupon-type.enum";
 import { CouponObjectType } from "../enums/coupon-object-type.enum";
