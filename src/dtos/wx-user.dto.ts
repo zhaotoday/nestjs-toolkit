@@ -3,6 +3,13 @@ import { Is } from "../enums/is.enum";
 
 export class WxUserDto {
   @ApiProperty({
+    description: "ID",
+    example: 1
+  })
+  @ApiPropertyOptional()
+  id?: number;
+
+  @ApiProperty({
     description: "OPEN ID",
     example: "omMee4tymy2V-axAKL5EpKwUuWG8"
   })

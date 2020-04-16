@@ -1,7 +1,14 @@
-import { ApiProperty } from "@nestjs/swagger";
+import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { Is } from "../enums/is.enum";
 
 export class AdDto {
+  @ApiProperty({
+    description: "ID",
+    example: 1
+  })
+  @ApiPropertyOptional()
+  id?: number;
+
   @ApiProperty({
     description: "标题",
     example: "XXX 活动"

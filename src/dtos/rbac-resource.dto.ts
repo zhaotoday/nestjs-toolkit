@@ -1,6 +1,13 @@
-import { ApiProperty } from "@nestjs/swagger";
+import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger'
 
 export class RbacResourceDto {
+  @ApiProperty({
+    description: "ID",
+    example: 1
+  })
+  @ApiPropertyOptional()
+  id?: number;
+
   @ApiProperty({
     description: "名称",
     example: "微信会员"

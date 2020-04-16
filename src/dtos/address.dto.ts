@@ -1,8 +1,15 @@
-import { ApiProperty } from "@nestjs/swagger";
+import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { Is } from "../enums/is.enum";
 import { AddressTag } from "../enums/address-tag.enum";
 
 export class AddressDto {
+  @ApiProperty({
+    description: "ID",
+    example: 1
+  })
+  @ApiPropertyOptional()
+  id?: number;
+
   @ApiProperty({
     description: "微信用户 ID",
     example: 1

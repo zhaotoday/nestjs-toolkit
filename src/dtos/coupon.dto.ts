@@ -1,9 +1,16 @@
-import { ApiProperty } from "@nestjs/swagger";
+import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger'
 import { Is } from "../enums/is.enum";
 import { CouponType } from "../enums/coupon-type.enum";
 import { CouponObjectType } from "../enums/coupon-object-type.enum";
 
 export class CouponDto {
+  @ApiProperty({
+    description: "ID",
+    example: 1
+  })
+  @ApiPropertyOptional()
+  id?: number;
+
   @ApiProperty({
     description: "优惠券号",
     example: "2001011106289214"

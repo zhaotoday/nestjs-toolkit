@@ -1,6 +1,13 @@
-import { ApiProperty } from "@nestjs/swagger";
+import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger'
 
 export class BoughtProductDto {
+  @ApiProperty({
+    description: "ID",
+    example: 1
+  })
+  @ApiPropertyOptional()
+  id?: number;
+
   @ApiProperty({
     description: "微信用户 ID",
     example: 1

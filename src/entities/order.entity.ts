@@ -22,12 +22,6 @@ export class Order extends Model<Order> {
   no: string;
 
   @Column({
-    type: DataType.JSON,
-    comment: "购买产品"
-  })
-  products: object;
-
-  @Column({
     type: DataType.INTEGER.UNSIGNED,
     comment: "优惠券 ID"
   })

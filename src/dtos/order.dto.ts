@@ -16,11 +16,6 @@ export class OrderDto {
   no: string;
 
   @ApiProperty({
-    description: "购买产品"
-  })
-  products: object;
-
-  @ApiProperty({
     description: "收获地址 ID",
     example: 1
   })
