@@ -2,9 +2,9 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
 import { CheckStatus } from "../enums/check-status.enum";
 
 @Table({
-  tableName: "comments"
+  tableName: "messages"
 })
-export class Comment extends Model<Comment> {
+export class Message extends Model<Message> {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,
@@ -15,10 +15,16 @@ export class Comment extends Model<Comment> {
   id: number;
 
   @Column({
-    type: DataType.TINYINT({ length: 1 }),
-    comment: "评分"
+    type: DataType.STRING(50),
+    comment: "联系人"
   })
-  rate: number;
+  contactName: string;
+
+  @Column({
+    type: DataType.STRING(100),
+    comment: "联系方式"
+  })
+  contact: string;
 
   @Column({
     type: DataType.TEXT({ length: "long" }),

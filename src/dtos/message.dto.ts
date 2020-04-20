@@ -1,7 +1,7 @@
 import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { CheckStatus } from "../enums/check-status.enum";
 
-export class CommentDto {
+export class MessageDto {
   @ApiProperty({
     description: "ID",
     example: 1
@@ -16,20 +16,20 @@ export class CommentDto {
   wxUserId: number;
 
   @ApiProperty({
-    description: "产品 ID",
-    example: 1
+    description: "联系人",
+    example: "赵金添"
   })
-  productId: number;
+  contactName: string;
 
   @ApiProperty({
-    description: "评分",
-    example: 1
+    description: "联系方式",
+    example: "13950442340"
   })
-  rate: number;
+  contact: string;
 
   @ApiProperty({
     description: "内容",
-    example: "这件衣服不错。"
+    example: "这树又高又大。"
   })
   content: string;
 
