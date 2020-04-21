@@ -15,4 +15,5 @@ export interface BaseConfigInterface {
   accessToken: AccessTokenInterface;
   captcha?: CaptchaInterface;
   dictVersion?: string;
+  enableCos?: boolean;
 }
