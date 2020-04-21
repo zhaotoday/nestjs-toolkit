@@ -16,6 +16,7 @@ export interface EnvConfigInterface {
   port: number;
   baseUrl?: string;
   cdnUrl?: string;
+  enableCos?: boolean;
   database?: SequelizeOptions;
   redis?: RedisInterface;
   jwt?: JwtInterface;
