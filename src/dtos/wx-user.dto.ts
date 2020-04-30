@@ -19,7 +19,8 @@ export class WxUserDto {
     description: "UNION ID",
     example: "o-2fp5rjHIq5xE52gGwriP1qFhf8"
   })
-  readonly unionId: string;
+  @ApiPropertyOptional()
+  readonly unionId?: string;
 
   @ApiProperty({
     description: "头像",
