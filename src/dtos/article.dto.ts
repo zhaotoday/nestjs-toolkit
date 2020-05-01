@@ -75,4 +75,11 @@ export class ArticleDto {
     example: 1
   })
   order: number;
+
+  @ApiProperty({
+    description: "别名",
+    example: "news"
+  })
+  @ApiPropertyOptional()
+  alias?: string;
 }

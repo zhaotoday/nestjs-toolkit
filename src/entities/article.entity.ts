@@ -76,4 +76,10 @@ export class Article extends Model<Article> {
     comment: "排序"
   })
   order: number;
+
+  @Column({
+    type: DataType.STRING(50),
+    comment: "别名"
+  })
+  alias: string;
 }
