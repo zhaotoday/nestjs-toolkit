@@ -2,10 +2,12 @@ export * from "./core/base.controller";
 export * from "./core/base.service";
 
 export * from "./dicts/address-tag.dict";
+export * from "./dicts/blood-group.dict";
 export * from "./dicts/certificate-type.dict";
 export * from "./dicts/check-status.dict";
 export * from "./dicts/coupon-object-type.dict";
 export * from "./dicts/coupon-type.dict";
+export * from "./dicts/dress-size.dict";
 export * from "./dicts/enable-status.dict";
 export * from "./dicts/gender.dict";
 export * from "./dicts/order-payment.dict";
@@ -76,10 +78,12 @@ export * from "./entities/wx-user.entity";
 export * from "./entities/wx-user-coupon.entity";
 
 export * from "./enums/address-tag.enum";
+export * from "./enums/blood-group.enum";
 export * from "./enums/certificate-type.enum";
 export * from "./enums/check-status.enum";
 export * from "./enums/coupon-object-type.enum";
 export * from "./enums/coupon-type.enum";
+export * from "./enums/dress-size.enum";
 export * from "./enums/gender.enum";
 export * from "./enums/order-payment.enum";
 export * from "./enums/is.enum";
