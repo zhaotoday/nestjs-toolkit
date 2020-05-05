@@ -26,6 +26,7 @@ export * from "./dtos/coupon.dto";
 export * from "./dtos/dict-param.dto";
 export * from "./dtos/file.dto";
 export * from "./dtos/file-upload.dto";
+export * from "./dtos/lat-lng.dto";
 export * from "./dtos/manager.dto";
 export * from "./dtos/manager-login.dto";
 export * from "./dtos/merchant.dto";
