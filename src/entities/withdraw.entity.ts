@@ -1,5 +1,5 @@
 import { Column, DataType, Model, Table } from "sequelize-typescript";
-import { OrderStatus } from "../enums/order-status.enum";
+import { WithdrawStatus } from "../enums/withdraw-status.enum";
 
 @Table({
   tableName: "withdraws"
@@ -28,9 +28,9 @@ export class Withdraw extends Model<Withdraw> {
   amount: number;
 
   @Column({
-    type: DataType.ENUM.apply(null, Object.values(OrderStatus)),
+    type: DataType.ENUM.apply(null, Object.values(WithdrawStatus)),
     comment: "状态",
-    defaultValue: OrderStatus.ToPay
+    defaultValue: WithdrawStatus.ToPay
   })
   status: string;
 }
