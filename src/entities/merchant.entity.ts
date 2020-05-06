@@ -39,6 +39,12 @@ export class Merchant extends Model<Merchant> {
   phoneNumber: string;
 
   @Column({
+    type: DataType.TEXT({ length: "tiny" }),
+    comment: "备注"
+  })
+  remark: string;
+
+  @Column({
     type: DataType.TINYINT({ length: 1 }),
     comment: "状态",
     defaultValue: CheckStatus.Checking

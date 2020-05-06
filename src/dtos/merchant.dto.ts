@@ -46,6 +46,11 @@ export class MerchantDto {
   phoneNumber: string;
 
   @ApiProperty({
+    description: "备注"
+  })
+  remark: string;
+
+  @ApiProperty({
     description: "状态",
     example: CheckStatus.Checking
   })
