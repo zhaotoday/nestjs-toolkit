@@ -4,6 +4,7 @@ export * from "./core/base.service";
 export * from "./dicts/address-tag.dict";
 export * from "./dicts/blood-group.dict";
 export * from "./dicts/certificate-type.dict";
+export * from "./dicts/check-action.dict";
 export * from "./dicts/check-status.dict";
 export * from "./dicts/coupon-object-type.dict";
 export * from "./dicts/coupon-type.dict";
