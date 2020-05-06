@@ -5,10 +5,12 @@ export const WithdrawStatusDict = [
   },
   {
     value: "Paid",
-    label: "已付款"
+    label: "已付款",
+    action: 1
   },
   {
     value: "Rejected",
-    label: "已拒绝"
+    label: "已拒绝",
+    action: -1
   }
 ];
