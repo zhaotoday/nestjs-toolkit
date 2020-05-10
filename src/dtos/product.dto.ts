@@ -28,6 +28,12 @@ export class ProductDto {
   price: number;
 
   @ApiProperty({
+    description: "积分",
+    example: 100
+  })
+  points: number;
+
+  @ApiProperty({
     description: "原价",
     example: 200.01
   })

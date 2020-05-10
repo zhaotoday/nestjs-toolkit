@@ -29,6 +29,12 @@ export class Product extends Model<Product> {
 
   @Column({
     type: DataType.FLOAT(10),
+    comment: "积分"
+  })
+  points: number;
+
+  @Column({
+    type: DataType.FLOAT(10),
     comment: "原价",
     defaultValue: 0
   })
