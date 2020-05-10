@@ -29,7 +29,8 @@ export class Product extends Model<Product> {
 
   @Column({
     type: DataType.FLOAT(10),
-    comment: "积分"
+    comment: "积分",
+    defaultValue: 0
   })
   points: number;
 
