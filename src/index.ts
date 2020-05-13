@@ -1,3 +1,6 @@
+export * from "./config/base-default.config";
+export * from "./config/env-default.config";
+
 export * from "./core/base.controller";
 export * from "./core/base.service";
 
