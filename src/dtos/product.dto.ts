@@ -27,6 +27,13 @@ export class ProductDto {
   })
   price: number;
 
+
+  @ApiProperty({
+    description: "原价",
+    example: 200.01
+  })
+  originalPrice: number;
+
   @ApiProperty({
     description: "积分",
     example: 100
@@ -34,10 +41,16 @@ export class ProductDto {
   points: number;
 
   @ApiProperty({
-    description: "原价",
-    example: 200.01
+    description: "赠送积分",
+    example: 100
   })
-  originalPrice: number;
+  givingPoints: number;
+
+  @ApiProperty({
+    description: "佣金比例",
+    example: 10.01
+  })
+  commissionRate: number;
 
   @ApiProperty({
     description: "库存",

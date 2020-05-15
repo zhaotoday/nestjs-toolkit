@@ -29,6 +29,13 @@ export class Product extends Model<Product> {
 
   @Column({
     type: DataType.FLOAT(10),
+    comment: "原价",
+    defaultValue: 0
+  })
+  originalPrice: number;
+
+  @Column({
+    type: DataType.FLOAT(10),
     comment: "积分",
     defaultValue: 0
   })
@@ -36,10 +43,16 @@ export class Product extends Model<Product> {
 
   @Column({
     type: DataType.FLOAT(10),
-    comment: "原价",
+    comment: "赠送积分",
     defaultValue: 0
   })
-  originalPrice: number;
+  givingPoints: number;
+
+  @Column({
+    type: DataType.INTEGER.UNSIGNED,
+    comment: "佣金比例"
+  })
+  commissionRate: number;
 
   @Column({
     type: DataType.INTEGER({ length: 8 }),
@@ -79,12 +92,6 @@ export class Product extends Model<Product> {
     defaultValue: Is.False
   })
   recommended: number;
-
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    comment: "佣金比例"
-  })
-  commissionRate: number;
 
   @Column({
     type: DataType.TINYINT({ length: 1 }),
