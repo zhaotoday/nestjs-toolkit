@@ -18,6 +18,7 @@ export * from "./dicts/order-payment.dict";
 export * from "./dicts/order-status.dict";
 export * from "./dicts/publish-status.dict";
 export * from "./dicts/withdraw-status.dict";
+export * from "./dicts/wx-user-type.dict";
 
 export * from "./dtos/ad.dto";
 export * from "./dtos/address.dto";
