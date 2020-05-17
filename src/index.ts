@@ -94,6 +94,7 @@ export * from "./enums/is.enum";
 export * from "./enums/order-payment.enum";
 export * from "./enums/order-status.enum";
 export * from "./enums/wx-user-login-type.enum";
+export * from "./enums/wx-user-type.enum";
 
 export * from "./interfaces/base-config.interface";
 export * from "./interfaces/captcha.interface";

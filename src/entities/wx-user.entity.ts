@@ -1,6 +1,7 @@
 import { Column, DataType, Model, Table } from "sequelize-typescript";
 import { Is } from "../enums/is.enum";
 import { Gender } from "../enums/gender.enum";
+import { WxUserType } from '../enums/wx-user-type.enum'
 
 @Table({
   tableName: "wxUsers"
@@ -100,6 +101,12 @@ export class WxUser extends Model<WxUser> {
     comment: "所有数据"
   })
   data: object;
+
+  @Column({
+    type: DataType.ENUM.apply(null, Object.values(WxUserType)),
+    comment: "用户类型"
+  })
+  type: string;
 
   @Column({
     type: DataType.TINYINT({ length: 1 }),

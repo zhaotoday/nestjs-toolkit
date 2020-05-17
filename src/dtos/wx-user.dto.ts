@@ -1,5 +1,6 @@
 import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { Is } from "../enums/is.enum";
+import { WxUserType } from '../enums/wx-user-type.enum'
 
 export class WxUserDto {
   @ApiProperty({
@@ -94,10 +95,17 @@ export class WxUserDto {
   readonly city: string;
 
   @ApiProperty({
-    description: "所有数据"
+    description: "所有数据",
+    example: {}
   })
   @ApiPropertyOptional()
   readonly data?: string;
+
+  @ApiProperty({
+    description: "用户类型",
+    example: WxUserType.User
+  })
+  type: string;
 
   @ApiProperty({
     description: "状态",
