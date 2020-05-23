@@ -6,6 +6,7 @@ import { CosInterface } from "./cos.interface";
 import { MerchantInterface } from "./merchant.interface";
 import { MpInterface } from "./mp.interface";
 import { OaInterface } from "./oa.interface";
+import { AppInterface } from "./app.interface";
 
 interface JwtInterface {
   admin: JwtOptionsInterface;
@@ -24,5 +25,6 @@ export interface EnvConfigInterface {
   cos?: CosInterface;
   mp?: MpInterface;
   oa?: OaInterface;
+  app?: AppInterface;
   merchant?: MerchantInterface;
 }

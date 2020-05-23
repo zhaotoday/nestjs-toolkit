@@ -1,5 +1,5 @@
 import { ApiProperty } from "@nestjs/swagger";
-// certificate-types
+
 export class RangeDto {
   @ApiProperty({
     description: "从 XXX",
