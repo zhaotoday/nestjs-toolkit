@@ -1,4 +1,5 @@
 export enum WxUserLoginType {
   Mp = "Mp",
-  Oa = "Oa"
+  Oa = "Oa",
+  App = "App"
 }
