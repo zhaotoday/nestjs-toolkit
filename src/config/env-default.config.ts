@@ -7,6 +7,10 @@ export const envDefaultConfig = {
       captcha: 1
     }
   },
+  tc: {
+    secretId: "--",
+    secretKey: "--"
+  },
   cos: {
     secretId: "--",
     secretKey: "--",

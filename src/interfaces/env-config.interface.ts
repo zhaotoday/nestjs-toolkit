@@ -7,6 +7,7 @@ import { MerchantInterface } from "./merchant.interface";
 import { MpInterface } from "./mp.interface";
 import { OaInterface } from "./oa.interface";
 import { AppInterface } from "./app.interface";
+import { TcInterface } from "./tc.interface";
 
 interface JwtInterface {
   admin: JwtOptionsInterface;
@@ -21,6 +22,7 @@ export interface EnvConfigInterface {
   database?: SequelizeOptions;
   redis?: RedisInterface;
   jwt?: JwtInterface;
+  tc?: TcInterface;
   sms?: SmsInterface;
   cos?: CosInterface;
   mp?: MpInterface;
