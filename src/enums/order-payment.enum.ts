@@ -1,4 +1,5 @@
 export enum OrderPayment {
   WeChatPay = "WeChatPay",
-  Cod = "Cod"
+  Cod = "Cod",
+  PointPay = "PointPay"
 }

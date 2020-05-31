@@ -6,5 +6,9 @@ export const OrderPaymentDict = [
   {
     value: "Cod",
     label: "货到付款"
+  },
+  {
+    value: "PointPay",
+    label: "积分支付"
   }
 ];
