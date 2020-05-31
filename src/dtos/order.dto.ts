@@ -34,6 +34,12 @@ export class OrderDto {
   amount: number;
 
   @ApiProperty({
+    description: "支付积分",
+    example: 100
+  })
+  points: number;
+
+  @ApiProperty({
     description: "支付时间",
     example: 1581689999001
   })

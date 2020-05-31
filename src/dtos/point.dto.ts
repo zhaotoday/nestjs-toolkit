@@ -26,15 +26,4 @@ export class PointDto {
     example: 100
   })
   value: number;
-
-  @ApiProperty({
-    description: "相关数据",
-    example: {
-      event: "BUY_PRODUCT",
-      model: "Product",
-      id: 1,
-      count: 1
-    }
-  })
-  data: object;
 }

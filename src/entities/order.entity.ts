@@ -35,6 +35,13 @@ export class Order extends Model<Order> {
   amount: number;
 
   @Column({
+    type: DataType.FLOAT({ length: 10 }),
+    comment: "支付积分",
+    defaultValue: 0
+  })
+  points: number;
+
+  @Column({
     type: DataType.BIGINT({ length: 13 }),
     comment: "支付时间"
   })
