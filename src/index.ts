@@ -43,6 +43,7 @@ export * from "./dtos/message.dto";
 export * from "./dtos/order.dto";
 export * from "./dtos/payment-create-unified-order.dto";
 export * from "./dtos/point.dto";
+export * from "./dtos/point-buy-product.dto";
 export * from "./dtos/product.dto";
 export * from "./dtos/range.dto";
 export * from "./dtos/rbac-resource.dto";
