@@ -1,4 +1,5 @@
 import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
+import { PointType } from "../enums/point-type.enum";
 
 export class PointDto {
   @ApiProperty({
@@ -16,7 +17,7 @@ export class PointDto {
 
   @ApiProperty({
     description: "类型",
-    example: "POINT_CONSUMPTION"
+    example: PointType.BuyProductDeducting
   })
   type: string;
 
