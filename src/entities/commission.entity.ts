@@ -15,8 +15,8 @@ export class Commission extends Model<Commission> {
 
   @Column({
     type: DataType.FLOAT(10),
-    comment: "佣金",
+    comment: "佣金金额",
     defaultValue: 0
   })
-  amount: number;
+  value: number;
 }

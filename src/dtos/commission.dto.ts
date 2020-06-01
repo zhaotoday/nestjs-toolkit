@@ -30,5 +30,5 @@ export class CommissionDto {
     description: "佣金",
     example: 100
   })
-  amount: number;
+  value: number;
 }
