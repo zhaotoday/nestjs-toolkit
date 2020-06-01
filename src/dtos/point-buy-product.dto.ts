@@ -1,5 +1,4 @@
 import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
-import { ProductDto } from "./product.dto";
 
 export class PointBuyProductDto {
   @ApiProperty({
@@ -14,12 +13,6 @@ export class PointBuyProductDto {
     example: 1
   })
   wxUserId: number;
-
-  @ApiProperty({
-    description: "购买产品",
-    example: []
-  })
-  products: ProductDto[];
 
   @ApiProperty({
     description: "消费积分",
