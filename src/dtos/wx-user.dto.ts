@@ -17,6 +17,24 @@ export class WxUserDto {
   readonly openId: string;
 
   @ApiProperty({
+    description: "公众号 OPEN ID",
+    example: "omMee4tymy2V-axAKL5EpKwUuWG8"
+  })
+  readonly oaOpenId: string;
+
+  @ApiProperty({
+    description: "网站应用 OPEN ID",
+    example: "omMee4tymy2V-axAKL5EpKwUuWG8"
+  })
+  readonly webOpenId: string;
+
+  @ApiProperty({
+    description: "移动应用 OPEN ID",
+    example: "omMee4tymy2V-axAKL5EpKwUuWG8"
+  })
+  readonly mobileOpenId: string;
+
+  @ApiProperty({
     description: "UNION ID",
     example: "o-2fp5rjHIq5xE52gGwriP1qFhf8"
   })

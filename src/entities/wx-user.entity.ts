@@ -24,6 +24,24 @@ export class WxUser extends Model<WxUser> {
 
   @Column({
     type: DataType.STRING(50),
+    comment: "公众号 OPEN ID"
+  })
+  oaOpenId: string;
+
+  @Column({
+    type: DataType.STRING(50),
+    comment: "网站应用 OPEN ID"
+  })
+  webOpenId: string;
+
+  @Column({
+    type: DataType.STRING(50),
+    comment: "移动应用 OPEN ID"
+  })
+  mobileOpenId: string;
+
+  @Column({
+    type: DataType.STRING(50),
     comment: "UNION ID"
   })
   unionId: string;
