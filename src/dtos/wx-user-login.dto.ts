@@ -40,4 +40,15 @@ export class WxUserLoginDto {
     example: "/pages/my/addresses/list/index"
   })
   page: string;
+
+  @ApiProperty({
+    description: "额外数据",
+    example: {
+      data1: 1,
+      data2: 2
+    }
+  })
+  extData: {
+    [propName: string]: any;
+  };
 }
