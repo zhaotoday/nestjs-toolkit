@@ -48,7 +48,7 @@ export class WxUserLoginDto {
       data2: 2
     }
   })
-  extData: {
+  extra: {
     [propName: string]: any;
   };
 }
