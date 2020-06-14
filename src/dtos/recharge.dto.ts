@@ -22,10 +22,10 @@ export class RechargeDto {
   no: string;
 
   @ApiProperty({
-    description: "金额",
+    description: "充值金额",
     example: 100
   })
-  amount: number;
+  value: number;
 
   @ApiProperty({
     description: "状态",
