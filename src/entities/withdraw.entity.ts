@@ -22,10 +22,10 @@ export class Withdraw extends Model<Withdraw> {
 
   @Column({
     type: DataType.FLOAT(10),
-    comment: "金额",
+    comment: "提现金额",
     defaultValue: 0
   })
-  amount: number;
+  value: number;
 
   @Column({
     type: DataType.ENUM.apply(null, Object.values(WithdrawStatus)),
