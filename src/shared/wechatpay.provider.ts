@@ -41,6 +41,16 @@ export class WeChatPayProvider {
     return { unifiedOrder, extra };
   }
 
+  transfer({ agentOptions, openId, partnerTradeNo, amount, desc }) {
+    return this.weChatPay.transfer(agentOptions, {
+      openid: openId,
+      partner_trade_no: partnerTradeNo,
+      amount: amount * 100,
+      desc,
+      spbill_create_ip: "123.12.12.123"
+    });
+  }
+
   sign(params) {
     return this.weChatPay.sign(params);
   }
