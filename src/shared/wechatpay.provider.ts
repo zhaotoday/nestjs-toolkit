@@ -45,7 +45,7 @@ export class WeChatPayProvider {
     return this.weChatPay.transfer(agentOptions, {
       openid: openId,
       partner_trade_no: partnerTradeNo,
-      amount: amount * 100,
+      amount: amount,
       desc,
       spbill_create_ip: "123.12.12.123"
     });
