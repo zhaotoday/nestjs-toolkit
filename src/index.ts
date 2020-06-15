@@ -75,7 +75,7 @@ export * from "./entities/commission.entity";
 export * from "./entities/coupon.entity";
 export * from "./entities/distributor-application.entity";
 export * from "./entities/file.entity";
-export * from "./entities/incomes.entity";
+export * from "./entities/income.entity";
 export * from "./entities/manager.entity";
 export * from "./entities/merchant.entity";
 export * from "./entities/message.entity";
