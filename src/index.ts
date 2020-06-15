@@ -36,7 +36,7 @@ export * from "./dtos/dict-param.dto";
 export * from "./dtos/distributor-application.dto";
 export * from "./dtos/file.dto";
 export * from "./dtos/file-upload.dto";
-export * from "./dtos/incomes.dto";
+export * from "./dtos/income.dto";
 export * from "./dtos/lat-lng.dto";
 export * from "./dtos/manager.dto";
 export * from "./dtos/manager-login.dto";
