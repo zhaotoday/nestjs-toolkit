@@ -30,7 +30,7 @@ export class SmsProvider {
 
   sendCaptcha({ phoneNumber }): string {
     const random = this.helpersProvider.getRandom(6);
-    const params = ["绑定手机号", random, 10];
+    const params = [random];
 
     this.sss.sendWithParam(
       86,
