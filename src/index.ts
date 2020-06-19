@@ -66,7 +66,7 @@ export * from "./dtos/wx-user-send-captcha.dto";
 export * from "./entities/ad.entity";
 export * from "./entities/address.entity";
 export * from "./entities/article.entity";
-export * from "./entities/bought-products.entity";
+export * from "./entities/bought-product.entity";
 export * from "./entities/brand.entity";
 export * from "./entities/category.entity";
 export * from "./entities/collection.entity";
