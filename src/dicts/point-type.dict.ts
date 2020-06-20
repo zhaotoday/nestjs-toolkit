@@ -12,7 +12,7 @@ export const PointTypeDict = [
     label: "分销员奖励"
   },
   {
-    value: "SystemGiving",
-    label: "系统赠送"
+    value: "IncreaseOrDecrease",
+    label: "积分增减"
   }
 ];
