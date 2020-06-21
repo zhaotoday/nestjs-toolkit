@@ -1,11 +1,15 @@
 export const PointTypeDict = [
   {
     value: "BuyProductDeducting",
-    label: "购买商品扣除"
+    label: "购物扣除"
   },
   {
     value: "BuyProductGiving",
-    label: "购买商品赠送"
+    label: "购物赠送"
+  },
+  {
+    value: "SellProduct",
+    label: "出售商品"
   },
   {
     value: "Commission",
