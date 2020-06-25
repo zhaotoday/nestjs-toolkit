@@ -16,7 +16,7 @@ export class PaymentCreateUnifiedOrderDto {
   wxUserLoginType: string;
 
   @ApiProperty({
-    description: "购买产品"
+    description: "购买商品"
   })
   products: object;
 

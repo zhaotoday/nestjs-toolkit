@@ -3,7 +3,7 @@ import { CheckStatus } from "../enums/check-status.enum";
 
 @Table({
   tableName: "messages",
-  comment: "消息"
+  comment: "留言"
 })
 export class Message extends Model<Message> {
   @Column({

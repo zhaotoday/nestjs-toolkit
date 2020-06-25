@@ -16,7 +16,7 @@ export class CommentDto {
   wxUserId: number;
 
   @ApiProperty({
-    description: "产品 ID",
+    description: "商品 ID",
     example: 1
   })
   productId: number;

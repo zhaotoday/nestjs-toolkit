@@ -3,7 +3,7 @@ import { Is } from "../enums/is.enum";
 
 @Table({
   tableName: "ads",
-  comment: "轮播广告"
+  comment: "广告"
 })
 export class Ad extends Model<Ad> {
   @Column({
