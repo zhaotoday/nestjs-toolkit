@@ -12,8 +12,6 @@ export const envDefaultConfig = {
     secretKey: "XXX"
   },
   cos: {
-    secretId: "XXX",
-    secretKey: "XXX",
     region: "XXX",
     bucket: "XXX"
   },
