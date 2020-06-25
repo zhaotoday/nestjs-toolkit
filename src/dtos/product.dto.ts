@@ -27,7 +27,6 @@ export class ProductDto {
   })
   price: number;
 
-
   @ApiProperty({
     description: "原价",
     example: 200.01

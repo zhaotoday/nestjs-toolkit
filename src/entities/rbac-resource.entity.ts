@@ -1,7 +1,8 @@
 import { Column, DataType, Model, Table } from "sequelize-typescript";
 
 @Table({
-  tableName: "rbacResource"
+  tableName: "rbacResource",
+  comment: "RBAC 资源"
 })
 export class RbacResource extends Model<RbacResource> {
   @Column({

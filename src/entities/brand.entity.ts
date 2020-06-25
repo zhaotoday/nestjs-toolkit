@@ -2,7 +2,8 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
 import { Is } from "../enums/is.enum";
 
 @Table({
-  tableName: "brands"
+  tableName: "brands",
+  comment: "商标"
 })
 export class Brand extends Model<Brand> {
   @Column({

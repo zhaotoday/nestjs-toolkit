@@ -1,7 +1,8 @@
 import { Column, DataType, Model, Table } from "sequelize-typescript";
 
 @Table({
-  tableName: "incomes"
+  tableName: "incomes",
+  comment: "收入"
 })
 export class Income extends Model<Income> {
   @Column({

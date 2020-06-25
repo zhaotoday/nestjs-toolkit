@@ -1,7 +1,8 @@
 import { Column, DataType, Model, Table } from "sequelize-typescript";
 
 @Table({
-  tableName: "categories"
+  tableName: "categories",
+  comment: "分类"
 })
 export class Category extends Model<Category> {
   @Column({

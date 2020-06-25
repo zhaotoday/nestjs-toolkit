@@ -3,7 +3,8 @@ import { Is } from "../enums/is.enum";
 import { CouponObjectType } from "../enums/coupon-object-type.enum";
 
 @Table({
-  tableName: "coupons"
+  tableName: "coupons",
+  comment: "优惠券"
 })
 export class Coupon extends Model<Coupon> {
   @Column({

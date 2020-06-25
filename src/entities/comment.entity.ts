@@ -2,7 +2,8 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
 import { CheckStatus } from "../enums/check-status.enum";
 
 @Table({
-  tableName: "comments"
+  tableName: "comments",
+  comment: "评论"
 })
 export class Comment extends Model<Comment> {
   @Column({

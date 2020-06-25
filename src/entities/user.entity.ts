@@ -10,7 +10,8 @@ import { WxUser } from "./wx-user.entity";
 import { Is } from "../enums/is.enum";
 
 @Table({
-  tableName: "users"
+  tableName: "users",
+  comment: "用户"
 })
 export class User extends Model<User> {
   @Column({

@@ -4,7 +4,8 @@ import { AddressTag } from "../enums/address-tag.enum";
 import { Gender } from "../enums/gender.enum";
 
 @Table({
-  tableName: "addresses"
+  tableName: "addresses",
+  comment: "地址"
 })
 export class Address extends Model<Address> {
   @Column({

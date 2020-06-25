@@ -2,7 +2,8 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
 import { WithdrawStatus } from "../enums/withdraw-status.enum";
 
 @Table({
-  tableName: "withdraws"
+  tableName: "withdraws",
+  comment: "提现"
 })
 export class Withdraw extends Model<Withdraw> {
   @Column({

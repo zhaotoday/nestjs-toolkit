@@ -2,7 +2,8 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
 import { Is } from "../enums/is.enum";
 
 @Table({
-  tableName: "wxUserCoupons"
+  tableName: "wxUserCoupons",
+  comment: "微信用户优惠券"
 })
 export class WxUserCoupon extends Model<WxUserCoupon> {
   @Column({

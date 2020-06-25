@@ -3,7 +3,8 @@ import { OrderPayment } from "../enums/order-payment.enum";
 import { OrderStatus } from "../enums/order-status.enum";
 
 @Table({
-  tableName: "orders"
+  tableName: "orders",
+  comment: "订单"
 })
 export class Order extends Model<Order> {
   @Column({

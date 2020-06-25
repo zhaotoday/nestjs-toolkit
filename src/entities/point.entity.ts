@@ -2,7 +2,8 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
 import { PointType } from "../enums/point-type.enum";
 
 @Table({
-  tableName: "points"
+  tableName: "points",
+  comment: "积分"
 })
 export class Point extends Model<Point> {
   @Column({

@@ -4,7 +4,8 @@ import { Gender } from "../enums/gender.enum";
 import { WxUserType } from "../enums/wx-user-type.enum";
 
 @Table({
-  tableName: "wxUsers"
+  tableName: "wxUsers",
+  comment: "微信用户"
 })
 export class WxUser extends Model<WxUser> {
   @Column({
