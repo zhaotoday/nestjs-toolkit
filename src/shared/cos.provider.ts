@@ -1,5 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { CosInterface } from "../interfaces/cos.interface";
+import { TcInterface } from "../interfaces/tc.interface";
 
 const Cos = require("cos-nodejs-sdk-v5");
 
@@ -7,9 +8,9 @@ const Cos = require("cos-nodejs-sdk-v5");
 export class CosProvider {
   public cos: any;
 
-  private _config: CosInterface;
+  private _config: TcInterface & CosInterface;
 
-  config(options: CosInterface): CosProvider {
+  config(options: TcInterface & CosInterface): CosProvider {
     this._config = options;
     return this;
   }

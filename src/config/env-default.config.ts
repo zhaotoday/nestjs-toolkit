@@ -1,34 +1,34 @@
 export const envDefaultConfig = {
   sms: {
-    appId: "--",
-    appKey: "--",
-    sign: "--",
+    appId: "XXX",
+    appKey: "XXX",
+    sign: "XXX",
     templateIds: {
       captcha: 1
     }
   },
   tc: {
-    secretId: "--",
-    secretKey: "--"
+    secretId: "XXX",
+    secretKey: "XXX"
   },
   cos: {
-    secretId: "--",
-    secretKey: "--",
-    region: "--",
-    bucket: "--"
+    secretId: "XXX",
+    secretKey: "XXX",
+    region: "XXX",
+    bucket: "XXX"
   },
   mp: {
-    appId: "--",
-    secret: "--"
+    appId: "XXX",
+    secret: "XXX"
   },
   oa: {
-    appId: "--",
-    secret: "--"
+    appId: "XXX",
+    secret: "XXX"
   },
   merchant: {
-    mchId: "--",
-    secret: "--",
-    body: "--",
-    notifyUrl: "--"
+    mchId: "XXX",
+    secret: "XXX",
+    body: "XXX",
+    notifyUrl: "XXX"
   }
 };
