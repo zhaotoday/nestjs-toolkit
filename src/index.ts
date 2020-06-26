@@ -135,5 +135,3 @@ export * from "./shared/sms.provider";
 export * from "./shared/sms-captcha.provider";
 export * from "./shared/storage.provider";
 export * from "./shared/wechatpay.provider";
-
-export * from "./utils/image.util";
