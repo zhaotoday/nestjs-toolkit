@@ -63,4 +63,14 @@ export class HelpersProvider {
 
     return deletedRes[0] ? deletedRes.map(item => item.id) : [];
   }
+
+  entityToRepository(entity) {
+    const { name } = entity;
+    return `${name.charAt(0).toLowerCase()}${name.substr(1)}Repository`;
+  }
+
+  moduleToPath(module) {
+    const { name } = module;
+    return `${name.charAt(0).toLowerCase()}${name.substr(1, name.length - 8)}`;
+  }
 }
