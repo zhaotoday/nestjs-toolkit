@@ -130,6 +130,40 @@ export class WxUserDto {
   type?: string;
 
   @ApiProperty({
+    description: "上级微信用户 ID（分销关系）",
+    example: 1
+  })
+  upperWxUserId: number;
+
+  @ApiProperty({
+    description: "收入积分",
+    example: 100
+  })
+  @ApiPropertyOptional()
+  incomePoints?: number;
+
+  @ApiProperty({
+    description: "支出积分",
+    example: -100
+  })
+  @ApiPropertyOptional()
+  expensePoints?: number;
+
+  @ApiProperty({
+    description: "收入佣金",
+    example: 100
+  })
+  @ApiPropertyOptional()
+  incomeCommissions?: number;
+
+  @ApiProperty({
+    description: "支出佣金",
+    example: -100
+  })
+  @ApiPropertyOptional()
+  expenseCommissions?: number;
+
+  @ApiProperty({
     description: "状态",
     example: Is.True
   })

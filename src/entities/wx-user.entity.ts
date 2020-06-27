@@ -129,6 +129,40 @@ export class WxUser extends Model<WxUser> {
   type: string;
 
   @Column({
+    type: DataType.INTEGER.UNSIGNED,
+    comment: "上级微信用户 ID（分销关系）"
+  })
+  upperId: number;
+
+  @Column({
+    type: DataType.INTEGER,
+    comment: "收入积分",
+    defaultValue: 0
+  })
+  incomePoints: number;
+
+  @Column({
+    type: DataType.INTEGER,
+    comment: "支出积分",
+    defaultValue: 0
+  })
+  expensePoints: number;
+
+  @Column({
+    type: DataType.FLOAT(10),
+    comment: "收入佣金",
+    defaultValue: 0
+  })
+  incomeCommissions: number;
+
+  @Column({
+    type: DataType.FLOAT(10),
+    comment: "支出佣金",
+    defaultValue: 0
+  })
+  expenseCommissions: number;
+
+  @Column({
     type: DataType.TINYINT({ length: 1 }),
     comment: "状态",
     defaultValue: Is.True
