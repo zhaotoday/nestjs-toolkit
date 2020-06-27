@@ -129,12 +129,6 @@ export class WxUser extends Model<WxUser> {
   type: string;
 
   @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    comment: "上级微信用户 ID（分销关系）"
-  })
-  upperId: number;
-
-  @Column({
     type: DataType.INTEGER,
     comment: "收入积分",
     defaultValue: 0
