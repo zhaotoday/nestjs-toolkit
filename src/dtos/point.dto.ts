@@ -16,6 +16,12 @@ export class PointDto {
   wxUserId: number;
 
   @ApiProperty({
+    description: "订单 ID",
+    example: 1
+  })
+  orderId: number;
+
+  @ApiProperty({
     description: "类型",
     example: PointType.BuyProductDeducting
   })
