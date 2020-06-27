@@ -133,7 +133,8 @@ export class WxUserDto {
     description: "上级微信用户 ID（分销关系）",
     example: 1
   })
-  upperWxUserId: number;
+  @ApiPropertyOptional()
+  upperId?: number;
 
   @ApiProperty({
     description: "收入积分",
