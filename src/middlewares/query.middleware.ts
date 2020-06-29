@@ -4,7 +4,7 @@ import { Injectable, NestMiddleware } from "@nestjs/common";
 @Injectable()
 export class QueryMiddleware implements NestMiddleware {
   async use(req: Request, res: Response, next: Function) {
-    const { where, offset, limit, include, order } = req.query;
+    const { where, offset, limit, include, order, attributes } = req.query;
 
     if (where) {
       req.query.where = JSON.parse(where);
@@ -24,6 +24,10 @@ export class QueryMiddleware implements NestMiddleware {
 
     if (order) {
       req.query.order = JSON.parse(order);
+    }
+
+    if (attributes) {
+      req.query.attributes = JSON.parse(attributes);
     }
 
     next();
