@@ -71,6 +71,6 @@ export class HelpersProvider {
 
   moduleToPath(module) {
     const { name } = module;
-    return `${name.charAt(0).toLowerCase()}${name.substr(1, name.length - 8)}`;
+    return `${name.charAt(0).toLowerCase()}${name.substr(1, name.length - 7)}`;
   }
 }
