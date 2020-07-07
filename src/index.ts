@@ -99,6 +99,7 @@ export * from "./enums/coupon-object-type.enum";
 export * from "./enums/coupon-type.enum";
 export * from "./enums/dress-size.enum";
 export * from "./enums/gender.enum";
+export * from "./enums/is.enum";
 export * from "./enums/order-payment.enum";
 export * from "./enums/is.enum";
 export * from "./enums/order-payment.enum";
