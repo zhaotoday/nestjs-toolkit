@@ -14,6 +14,7 @@ export * from "./dicts/coupon-type.dict";
 export * from "./dicts/dress-size.dict";
 export * from "./dicts/enable-status.dict";
 export * from "./dicts/gender.dict";
+export * from "./dicts/is.dict";
 export * from "./dicts/order-payment.dict";
 export * from "./dicts/order-status.dict";
 export * from "./dicts/point-type.dict";
