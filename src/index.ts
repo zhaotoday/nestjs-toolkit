@@ -52,6 +52,7 @@ export * from "./dtos/range.dto";
 export * from "./dtos/rbac-resource.dto";
 export * from "./dtos/rbac-role.dto";
 export * from "./dtos/recharge.dto";
+export * from "./dtos/template-message.dto";
 export * from "./dtos/user.dto";
 export * from "./dtos/video.dto";
 export * from "./dtos/video-signature.dto";
