@@ -126,6 +126,8 @@ export * from "./interfaces/sms-captcha.nterface";
 export * from "./interfaces/sms-template-ids.interface";
 export * from "./interfaces/storage.interface";
 export * from "./interfaces/tc.interface";
+export * from "./interfaces/tm.interface";
+export * from "./interfaces/tm-template-ids.interface";
 export * from "./interfaces/wechatpay.interface";
 
 export * from "./middlewares/query.middleware";

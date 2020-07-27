@@ -8,6 +8,7 @@ import { MpInterface } from "./mp.interface";
 import { OaInterface } from "./oa.interface";
 import { AppInterface } from "./app.interface";
 import { TcInterface } from "./tc.interface";
+import { TmInterface } from "./tm.interface";
 
 interface JwtInterface {
   admin: JwtOptionsInterface;
@@ -24,6 +25,7 @@ export interface EnvConfigInterface {
   jwt?: JwtInterface;
   tc?: TcInterface;
   sms?: SmsInterface;
+  tm?: TmInterface;
   cos?: CosInterface;
   mp?: MpInterface;
   oa?: OaInterface;
