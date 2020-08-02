@@ -77,4 +77,15 @@ export class TemplateMessageDto {
   })
   @ApiPropertyOptional()
   remark?: string;
+
+  @ApiProperty({
+    description: "额外数据",
+    example: {
+      extraData1: 1,
+      extraData2: 2
+    }
+  })
+  extra: {
+    [propName: string]: any;
+  };
 }

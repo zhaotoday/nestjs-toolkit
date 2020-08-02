@@ -44,8 +44,8 @@ export class WxUserLoginDto {
   @ApiProperty({
     description: "额外数据",
     example: {
-      data1: 1,
-      data2: 2
+      extraData1: 1,
+      extraData2: 2
     }
   })
   extra: {
