@@ -1,14 +1,14 @@
 export const GenderDict = [
   {
-    value: 0,
-    label: "未知"
+    label: "未知",
+    value: 0
   },
   {
-    value: 1,
-    label: "男"
+    label: "男",
+    value: 1
   },
   {
-    value: 2,
-    label: "女"
+    label: "女",
+    value: 2
   }
 ];

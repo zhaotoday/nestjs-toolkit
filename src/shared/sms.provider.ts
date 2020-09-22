@@ -28,6 +28,19 @@ export class SmsProvider {
     return this;
   }
 
+  send({ phoneNumber, templateId, params }): void {
+    this.sss.sendWithParam(
+      86,
+      phoneNumber,
+      templateId,
+      params,
+      this._config.sign,
+      "",
+      "",
+      function() {}
+    );
+  }
+
   sendCaptcha({ phoneNumber }): string {
     const random = this.helpersProvider.getRandom(6);
     const params = [random];
