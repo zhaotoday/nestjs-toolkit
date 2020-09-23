@@ -73,4 +73,10 @@ export class HelpersProvider {
     const { name } = module;
     return `${name.charAt(0).toLowerCase()}${name.substr(1, name.length - 7)}`;
   }
+
+  getItem(items, key, val) {
+    return items && items.length
+      ? items.find(item => item[key] === val) || {}
+      : {};
+  }
 }
