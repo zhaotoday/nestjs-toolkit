@@ -7,7 +7,7 @@ import { MerchantInterface } from "./merchant.interface";
 import { MpInterface } from "./mp.interface";
 import { OaInterface } from "./oa.interface";
 import { AppInterface } from "./app.interface";
-import { TcInterface } from "./tc.interface";
+import { TencentCloudInterface } from "./tencent-cloud.interface";
 import { TmInterface } from "./tm.interface";
 
 interface JwtInterface {
@@ -23,7 +23,7 @@ export interface EnvConfigInterface {
   database?: SequelizeOptions;
   redis?: RedisInterface;
   jwt?: JwtInterface;
-  tc?: TcInterface;
+  tc?: TencentCloudInterface;
   sms?: SmsInterface;
   tm?: TmInterface;
   cos?: CosInterface;

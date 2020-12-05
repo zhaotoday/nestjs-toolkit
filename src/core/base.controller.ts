@@ -8,7 +8,7 @@ export class BaseController {
 
   public include: Object;
 
-  public hasOrder: boolean = false;
+  public orderable: boolean = false;
 
   sign(data): Promise<string> {
     return jwt.sign({ data }, this.jwtConfig.secret, {

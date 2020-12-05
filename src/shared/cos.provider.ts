@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { CosInterface } from "../interfaces/cos.interface";
-import { TcInterface } from "../interfaces/tc.interface";
+import { TencentCloudInterface } from "../interfaces/tencent-cloud.interface";
 
 const Cos = require("cos-nodejs-sdk-v5");
 
@@ -8,9 +8,9 @@ const Cos = require("cos-nodejs-sdk-v5");
 export class CosProvider {
   public cos: any;
 
-  private _config: TcInterface & CosInterface;
+  private _config: TencentCloudInterface & CosInterface;
 
-  config(options: TcInterface & CosInterface): CosProvider {
+  config(options: TencentCloudInterface & CosInterface): CosProvider {
     this._config = options;
     return this;
   }

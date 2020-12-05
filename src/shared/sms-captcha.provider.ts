@@ -5,7 +5,7 @@ import {
   NotFoundException
 } from "@nestjs/common";
 import { SmsProvider } from "./sms.provider";
-import { SmsCaptchaInterface } from "../interfaces/sms-captcha.nterface";
+import { SmsCaptchaInterface } from "../interfaces/sms-captcha.interface";
 
 @Injectable()
 export class SmsCaptchaProvider {

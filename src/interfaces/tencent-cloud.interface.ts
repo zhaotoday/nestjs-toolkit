@@ -1,4 +1,4 @@
-export interface TcInterface {
+export interface TencentCloudInterface {
   secretId: string;
   secretKey: string;
 }

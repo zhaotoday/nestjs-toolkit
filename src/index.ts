@@ -123,15 +123,13 @@ export * from "./interfaces/oa.interface";
 export * from "./interfaces/merchant.interface";
 export * from "./interfaces/redis.interface";
 export * from "./interfaces/sms.interface";
-export * from "./interfaces/sms-captcha.nterface";
+export * from "./interfaces/sms-captcha.interface";
 export * from "./interfaces/sms-template-ids.interface";
 export * from "./interfaces/storage.interface";
-export * from "./interfaces/tc.interface";
+export * from "./interfaces/tencent-cloud.interface";
 export * from "./interfaces/tm.interface";
 export * from "./interfaces/tm-template-ids.interface";
 export * from "./interfaces/wechatpay.interface";
-
-export * from "./middlewares/query.middleware";
 
 export * from "./shared/cos.provider";
 export * from "./shared/helpers.provider";
