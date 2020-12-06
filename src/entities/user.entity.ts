@@ -13,7 +13,7 @@ import { Is } from "../enums/is.enum";
   tableName: "users",
   comment: "用户"
 })
-export class User extends Model<User> {
+export class User extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

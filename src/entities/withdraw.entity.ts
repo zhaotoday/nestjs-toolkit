@@ -5,7 +5,7 @@ import { WithdrawStatus } from "../enums/withdraw-status.enum";
   tableName: "withdraws",
   comment: "提现"
 })
-export class Withdraw extends Model<Withdraw> {
+export class Withdraw extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

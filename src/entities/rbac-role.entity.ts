@@ -4,7 +4,7 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
   tableName: "rbacRoles",
   comment: "RBAC 角色"
 })
-export class RbacRole extends Model<RbacRole> {
+export class RbacRole extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

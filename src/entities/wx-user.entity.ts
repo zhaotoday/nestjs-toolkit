@@ -7,7 +7,7 @@ import { WxUserType } from "../enums/wx-user-type.enum";
   tableName: "wxUsers",
   comment: "微信用户"
 })
-export class WxUser extends Model<WxUser> {
+export class WxUser extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

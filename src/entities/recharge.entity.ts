@@ -5,7 +5,7 @@ import { OrderStatus } from "../enums/order-status.enum";
   tableName: "recharges",
   comment: "充值"
 })
-export class Recharge extends Model<Recharge> {
+export class Recharge extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

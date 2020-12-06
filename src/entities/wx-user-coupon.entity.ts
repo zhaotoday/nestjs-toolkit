@@ -5,7 +5,7 @@ import { Is } from "../enums/is.enum";
   tableName: "wxUserCoupons",
   comment: "微信用户优惠券"
 })
-export class WxUserCoupon extends Model<WxUserCoupon> {
+export class WxUserCoupon extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,
