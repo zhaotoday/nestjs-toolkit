@@ -131,6 +131,8 @@ export * from "./interfaces/tm.interface";
 export * from "./interfaces/tm-template-ids.interface";
 export * from "./interfaces/wechatpay.interface";
 
+export * from "./pipes/validation.pipe";
+
 export * from "./shared/cos.provider";
 export * from "./shared/helpers.provider";
 export * from "./shared/redis.provider";
