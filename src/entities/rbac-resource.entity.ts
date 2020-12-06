@@ -4,7 +4,7 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
   tableName: "rbacResource",
   comment: "RBAC 资源"
 })
-export class RbacResource extends Model<RbacResource> {
+export class RbacResource extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

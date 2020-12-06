@@ -5,7 +5,7 @@ import { CheckStatus } from "../enums/check-status.enum";
   tableName: "messages",
   comment: "留言"
 })
-export class Message extends Model<Message> {
+export class Message extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

@@ -5,7 +5,7 @@ import { Is } from "../enums/is.enum";
   tableName: "managers",
   comment: "管理员"
 })
-export class Manager extends Model<Manager> {
+export class Manager extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

@@ -6,7 +6,7 @@ import { CouponObjectType } from "../enums/coupon-object-type.enum";
   tableName: "coupons",
   comment: "优惠券"
 })
-export class Coupon extends Model<Coupon> {
+export class Coupon extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

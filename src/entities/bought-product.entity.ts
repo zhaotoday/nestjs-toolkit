@@ -4,7 +4,7 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
   tableName: "boughtProducts",
   comment: "已购商品"
 })
-export class BoughtProduct extends Model<BoughtProduct> {
+export class BoughtProduct extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

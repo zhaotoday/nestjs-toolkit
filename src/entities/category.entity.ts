@@ -4,7 +4,7 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
   tableName: "categories",
   comment: "分类"
 })
-export class Category extends Model<Category> {
+export class Category extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

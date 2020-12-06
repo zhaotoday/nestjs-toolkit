@@ -5,7 +5,7 @@ import { CheckStatus } from "../enums/check-status.enum";
   tableName: "distributorApplications",
   comment: "分销员申请"
 })
-export class DistributorApplication extends Model<DistributorApplication> {
+export class DistributorApplication extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

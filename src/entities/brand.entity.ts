@@ -5,7 +5,7 @@ import { Is } from "../enums/is.enum";
   tableName: "brands",
   comment: "商标"
 })
-export class Brand extends Model<Brand> {
+export class Brand extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

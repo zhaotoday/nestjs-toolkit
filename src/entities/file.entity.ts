@@ -4,7 +4,7 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
   tableName: "files",
   comment: "文件"
 })
-export class File extends Model<File> {
+export class File extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

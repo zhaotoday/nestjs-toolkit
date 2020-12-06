@@ -5,7 +5,7 @@ import { PointType } from "../enums/point-type.enum";
   tableName: "points",
   comment: "积分"
 })
-export class Point extends Model<Point> {
+export class Point extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,

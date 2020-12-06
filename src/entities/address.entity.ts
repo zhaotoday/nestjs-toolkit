@@ -7,7 +7,7 @@ import { Gender } from "../enums/gender.enum";
   tableName: "addresses",
   comment: "地址"
 })
-export class Address extends Model<Address> {
+export class Address extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,
