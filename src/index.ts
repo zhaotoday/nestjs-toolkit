@@ -112,6 +112,8 @@ export * from "./enums/withdraw-status.enum";
 export * from "./enums/wx-user-login-type.enum";
 export * from "./enums/wx-user-type.enum";
 
+export * from "./filters/all-exceptions.filter";
+
 export * from "./interfaces/app.interface";
 export * from "./interfaces/base-config.interface";
 export * from "./interfaces/captcha.interface";
