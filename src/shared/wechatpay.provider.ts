@@ -19,7 +19,7 @@ export class WeChatPayProvider {
     const { mp, oa, app, merchant } = this._config;
 
     this.weChatPay = new WeChatPay({
-      appid: ((type) => {
+      appid: (() => {
         switch (type) {
           case WxUserLoginType.Mp:
             return mp.appId;
