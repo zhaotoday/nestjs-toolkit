@@ -8,6 +8,8 @@ import { WxUserLoginType } from "../enums/wx-user-login-type.enum";
 export class WeChatPayProvider {
   public weChatPay: WeChatPay;
 
+  public wxUserType: string;
+
   private _config: WeChatPayInterface;
 
   config(options: WeChatPayInterface): WeChatPayProvider {
@@ -17,6 +19,8 @@ export class WeChatPayProvider {
 
   init({ type = WxUserLoginType.Mp } = {}): WeChatPayProvider {
     const { mp, oa, app, merchant } = this._config;
+
+    this.wxUserType = type;
 
     this.weChatPay = new WeChatPay({
       appid: (() => {
@@ -47,6 +51,7 @@ export class WeChatPayProvider {
       total_fee: amount * 100,
       spbill_create_ip: "123.12.12.123",
       notify_url: notifyUrl,
+      trade_type: this.wxUserType === WxUserLoginType.App ? "APP" : "JSAPI",
     });
 
     return { unifiedOrder, extra };
