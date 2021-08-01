@@ -37,13 +37,13 @@ export class SmsProvider {
       this._config.sign,
       "",
       "",
-      function() {}
+      function () {}
     );
   }
 
   sendCaptcha({ phoneNumber }): string {
     const random = this.helpersProvider.getRandom(6);
-    const params = [random];
+    const params = [random, 10];
 
     this.sss.sendWithParam(
       86,
@@ -53,7 +53,7 @@ export class SmsProvider {
       this._config.sign,
       "",
       "",
-      function() {}
+      function () {}
     );
 
     return random;
