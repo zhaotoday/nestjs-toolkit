@@ -13,6 +13,7 @@ import { TmInterface } from "./tm.interface";
 interface JwtInterface {
   admin: JwtOptionsInterface;
   wx?: JwtOptionsInterface;
+  client?: JwtOptionsInterface;
 }
 
 export interface EnvConfigInterface {
