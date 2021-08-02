@@ -23,6 +23,10 @@ export const envDefaultConfig = {
     appId: "",
     secret: ""
   },
+  app: {
+    appId: "",
+    secret: ""
+  },
   merchant: {
     mchId: "",
     secret: "",
