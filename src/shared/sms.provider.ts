@@ -43,7 +43,7 @@ export class SmsProvider {
 
   sendCaptcha({ phoneNumber }): string {
     const random = this.helpersProvider.getRandom(6);
-    const params = [random, 10];
+    const params = [random, "10"];
 
     this.sss.sendWithParam(
       86,
