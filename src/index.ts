@@ -121,6 +121,7 @@ export * from "./interfaces/config.interface";
 export * from "./interfaces/env-config.interface";
 export * from "./interfaces/jwt-options.interface";
 export * from "./interfaces/mail.interface";
+export * from "./interfaces/mail-captcha.interface";
 export * from "./interfaces/mp.interface";
 export * from "./interfaces/oa.interface";
 export * from "./interfaces/merchant.interface";
