@@ -1,6 +1,6 @@
 export interface MailInterface {
   host: string;
-  port: string;
+  port: number;
   user: string;
   password: string;
 }
