@@ -9,7 +9,7 @@ import { OaInterface } from "./oa.interface";
 import { AppInterface } from "./app.interface";
 import { TencentCloudInterface } from "./tencent-cloud.interface";
 import { TmInterface } from "./tm.interface";
-import { MailerOptions } from "@nestjs-modules/mailer";
+import { MailInterface } from "./mail.interface";
 
 interface JwtInterface {
   admin: JwtOptionsInterface;
@@ -27,7 +27,7 @@ export interface EnvConfigInterface {
   jwt?: JwtInterface;
   tc?: TencentCloudInterface;
   sms?: SmsInterface;
-  mail?: MailerOptions;
+  mail?: MailInterface;
   tm?: TmInterface;
   cos?: CosInterface;
   mp?: MpInterface;
