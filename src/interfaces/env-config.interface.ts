@@ -18,7 +18,7 @@ interface JwtInterface {
 }
 
 export interface EnvConfigInterface {
-  port: number;
+  port?: number;
   baseUrl?: string;
   cdnUrl?: string;
   enableCos?: boolean;

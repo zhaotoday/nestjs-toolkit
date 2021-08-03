@@ -1,36 +1,38 @@
-export const envDefaultConfig = {
+import { EnvConfigInterface } from "../interfaces/env-config.interface";
+
+export const envDefaultConfig: EnvConfigInterface = {
   sms: {
     appId: "",
     appKey: "",
     sign: "",
     templateIds: {
-      captcha: 1
-    }
+      captcha: 1,
+    },
   },
   tc: {
     secretId: "",
-    secretKey: ""
+    secretKey: "",
   },
   cos: {
     region: "",
-    bucket: ""
+    bucket: "",
   },
   mp: {
     appId: "",
-    secret: ""
+    secret: "",
   },
   oa: {
     appId: "",
-    secret: ""
+    secret: "",
   },
   app: {
     appId: "",
-    secret: ""
+    secret: "",
   },
   merchant: {
     mchId: "",
     secret: "",
     body: "",
-    notifyUrl: ""
-  }
+    notifyUrl: "",
+  },
 };
