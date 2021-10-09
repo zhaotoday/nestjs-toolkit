@@ -14,6 +14,7 @@ export interface BaseConfigInterface {
   rateLimit: RateLimitInterface;
   accessToken: AccessTokenInterface;
   captcha?: CaptchaInterface;
+  svgCaptcha?: CaptchaInterface;
   dictVersion?: string;
   enableCos?: boolean;
 }
