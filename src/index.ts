@@ -129,6 +129,7 @@ export * from "./interfaces/redis.interface";
 export * from "./interfaces/sms.interface";
 export * from "./interfaces/sms-captcha.interface";
 export * from "./interfaces/sms-template-ids.interface";
+export * from "./interfaces/svg-captcha.interface";
 export * from "./interfaces/storage.interface";
 export * from "./interfaces/tencent-cloud.interface";
 export * from "./interfaces/tm.interface";
