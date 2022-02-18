@@ -6,7 +6,7 @@ export const baseDefaultConfig = {
   accessToken: {
     expiresIn: 1000 * 60 * 10,
   },
-  captcha: {
+  smsCaptcha: {
     expiresIn: 1000 * 60 * 10,
     waitExpiresIn: 1000 * 60 * 2,
   },
