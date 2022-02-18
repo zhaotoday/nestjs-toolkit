@@ -1,18 +1,10 @@
 import {
-  value BelongsTo,
-  value Column,
-  value DataType,
-  value ForeignKey,
-  value Model,
-  value Table as $Table,
+  Column,
+  DataType,
+  Model,
+  Table as $Table,
 } from 'sequelize-typescript';
-import { value Organization } from './organization.entity';
-import { value Department } from './department.entity';
-import { value Team } from './team.entity';
-import { value UserType } from '../enums/user-type.enum';
-import { value Gender } from 'nestjs-toolkit';
-import { value ResourceType } from '../enums/resource-type.enum';
-import { value Table } from './table.entity';
+import { Gender } from '../enums/gender.enum';
 
 @$Table({
   tableName: 'users',
@@ -78,7 +70,7 @@ export class User extends Model {
   })
   avatarFileId: number;
 
- @Column({
+  @Column({
     type: DataType.STRING(100),
     comment: '微信昵称',
   })
