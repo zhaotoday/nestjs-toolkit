@@ -1,66 +1,116 @@
 import {
-  BelongsTo,
-  Column,
-  DataType,
-  ForeignKey,
-  Model,
-  Table
-} from "sequelize-typescript";
-import { WxUser } from "./wx-user.entity";
-import { Is } from "../enums/is.enum";
+  value BelongsTo,
+  value Column,
+  value DataType,
+  value ForeignKey,
+  value Model,
+  value Table as $Table,
+} from 'sequelize-typescript';
+import { value Organization } from './organization.entity';
+import { value Department } from './department.entity';
+import { value Team } from './team.entity';
+import { value UserType } from '../enums/user-type.enum';
+import { value Gender } from 'nestjs-toolkit';
+import { value ResourceType } from '../enums/resource-type.enum';
+import { value Table } from './table.entity';
 
-@Table({
-  tableName: "users",
-  comment: "用户"
+@$Table({
+  tableName: 'users',
+  comment: '用户',
 })
 export class User extends Model {
   @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    primaryKey: true,
-    autoIncrement: true,
-    allowNull: false,
-    comment: "ID"
+    type: DataType.STRING(100),
+    comment: '昵称',
   })
-  id: number;
+  nickName: string;
 
   @Column({
     type: DataType.STRING(100),
-    comment: "姓名"
+    comment: '姓名',
   })
   name: string;
 
   @Column({
-    type: DataType.STRING(11),
-    comment: "手机号"
+    type: DataType.CHAR(11),
+    unique: true,
+    comment: '手机号码',
+    validate: {
+      is: /^1\d{2}\s?\d{4}\s?\d{4}$/,
+    },
   })
   phoneNumber: string;
 
   @Column({
-    type: DataType.STRING(50),
-    comment: "角色"
-  })
-  role: string;
-
-  @ForeignKey(() => WxUser)
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    comment: "微信用户 ID"
-  })
-  wxUserId: number;
-
-  @BelongsTo(() => WxUser)
-  wxUser: WxUser;
-
-  @Column({
     type: DataType.TINYINT({ length: 1 }),
-    comment: "状态",
-    defaultValue: Is.True
+    comment: '性别',
+    defaultValue: Gender.Unknown,
   })
-  status: number;
+  gender: number;
+
+  @Column({
+    type: DataType.STRING(100),
+    unique: true,
+    comment: '邮箱',
+    validate: {
+      isEmail: true,
+    },
+  })
+  mail: string;
+
+  @Column({
+    type: DataType.CHAR(64),
+    comment: '账户密码',
+  })
+  hashedPassword: string;
+
+  @Column({
+    type: DataType.VIRTUAL,
+    get() {
+      return !!this.get('hashedPassword');
+    },
+  })
+  hasPassword: boolean;
 
   @Column({
     type: DataType.INTEGER.UNSIGNED,
-    comment: "排序"
+    comment: '自定义头像文件 ID',
   })
-  order: number;
+  avatarFileId: number;
+
+ @Column({
+    type: DataType.STRING(100),
+    comment: '微信昵称',
+  })
+  wxNickName: string;
+
+  @Column({
+    type: DataType.STRING(200),
+    comment: '微信头像',
+  })
+  wxAvatarUrl: string;
+
+  @Column({
+    type: DataType.CHAR(28),
+    comment: '微信 UnionId',
+  })
+  wxUnionId: string;
+
+  @Column({
+    type: DataType.CHAR(28),
+    comment: '微信小程序 OpenId',
+  })
+  wxMpOpenId: string;
+
+  @Column({
+    type: DataType.CHAR(28),
+    comment: '微信移动应用 OpenId',
+  })
+  wxAppOpenId: string;
+
+  @Column({
+    type: DataType.CHAR(28),
+    comment: '微信网站应用 OpenId',
+  })
+  wxWebOpenId: string;
 }
