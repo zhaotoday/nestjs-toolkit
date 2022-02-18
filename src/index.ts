@@ -1,5 +1,4 @@
 export * from "./config/base-default.config";
-export * from "./config/env-default.config";
 
 export * from "./core/base.controller";
 export * from "./core/base.service";
@@ -20,7 +19,6 @@ export * from "./dicts/order-status.dict";
 export * from "./dicts/point-type.dict";
 export * from "./dicts/publish-status.dict";
 export * from "./dicts/withdraw-status.dict";
-export * from "./dicts/wx-user-type.dict";
 
 export * from "./dtos/ad.dto";
 export * from "./dtos/address.dto";
