@@ -67,7 +67,6 @@ export * from "./entities/ad.entity";
 export * from "./entities/address.entity";
 export * from "./entities/article.entity";
 export * from "./entities/bought-product.entity";
-export * from "./entities/brand.entity";
 export * from "./entities/category.entity";
 export * from "./entities/collection.entity";
 export * from "./entities/comment.entity";
@@ -82,8 +81,6 @@ export * from "./entities/message.entity";
 export * from "./entities/order.entity";
 export * from "./entities/point.entity";
 export * from "./entities/product.entity";
-export * from "./entities/rbac-resource.entity";
-export * from "./entities/rbac-role.entity";
 export * from "./entities/recharge.entity";
 export * from "./entities/user.entity";
 export * from "./entities/user-coupon.entity";
@@ -106,7 +103,6 @@ export * from "./enums/order-type.enum";
 export * from "./enums/point-type.enum";
 export * from "./enums/withdraw-status.enum";
 export * from "./enums/wx-user-login-type.enum";
-export * from "./enums/wx-user-type.enum";
 
 export * from "./filters/all-exceptions.filter";
 

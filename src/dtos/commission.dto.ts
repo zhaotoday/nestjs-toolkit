@@ -9,13 +9,13 @@ export class CommissionDto {
   id?: number;
 
   @ApiProperty({
-    description: "微信用户 ID",
+    description: "用户 ID",
     example: 1
   })
-  wxUserId: number;
+  userId: number;
 
   @ApiProperty({
-    description: "下级微信用户 ID（分销关系）",
+    description: "下级用户 ID（分销关系）",
     example: 1
   })
   lowerWxUserId: number;

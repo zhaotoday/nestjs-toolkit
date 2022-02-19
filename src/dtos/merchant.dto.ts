@@ -10,10 +10,10 @@ export class MerchantDto {
   id?: number;
 
   @ApiProperty({
-    description: "微信用户 ID",
+    description: "用户 ID",
     example: 1
   })
-  wxUserId: number;
+  userId: number;
 
   @ApiProperty({
     description: "名称",

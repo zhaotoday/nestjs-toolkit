@@ -9,10 +9,10 @@ export class BoughtProductDto {
   id?: number;
 
   @ApiProperty({
-    description: "微信用户 ID",
+    description: "用户 ID",
     example: 1
   })
-  wxUserId: number;
+  userId: number;
 
   @ApiProperty({
     description: "已购买的商品 ID 集合",
