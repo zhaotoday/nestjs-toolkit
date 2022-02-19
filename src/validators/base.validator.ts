@@ -5,7 +5,7 @@ import {
 } from "class-validator";
 
 @ValidatorConstraint()
-export class MyValidator implements ValidatorConstraintInterface {
+export class BaseValidator implements ValidatorConstraintInterface {
   validate(text: string, args: ValidationArguments) {
     return (
       text.length >= args.constraints[0] && text.length <= args.constraints[1]

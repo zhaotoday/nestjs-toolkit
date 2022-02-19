@@ -1,4 +1,4 @@
-export * from "./config/base-default.config";
+export * from "./config/base.config";
 
 export * from "./dicts/address-tag.dict";
 export * from "./dicts/blood-group.dict";

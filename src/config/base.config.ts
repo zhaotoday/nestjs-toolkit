@@ -1,4 +1,4 @@
-export const baseDefaultConfig = {
+export const baseConfig = {
   rateLimit: {
     windowMs: 15 * 60 * 1000,
     max: 10000,
@@ -15,5 +15,4 @@ export const baseDefaultConfig = {
     waitExpiresIn: 0,
   },
   dictVersion: "v1.0",
-  enableCos: false,
 };
