@@ -1,17 +1,16 @@
 import { Injectable } from "@nestjs/common";
 import { Schema } from "jugglingdb";
 import { RedisProvider } from "./redis.provider";
-import { StorageInterface } from "../interfaces/storage.interface";
 
 @Injectable()
 export class StorageProvider {
   public Model: Schema;
 
-  private _config: StorageInterface;
+  private _config;
 
   constructor(public redisProvider: RedisProvider) {}
 
-  config(options: StorageInterface): StorageProvider {
+  config(options): StorageProvider {
     this._config = options;
     return this;
   }

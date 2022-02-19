@@ -1,14 +1,13 @@
 import { Schema } from "jugglingdb";
 import { Injectable } from "@nestjs/common";
-import { RedisInterface } from "../interfaces/redis.interface";
 
 @Injectable()
 export class RedisProvider {
   public schema: Schema;
 
-  private _config: RedisInterface;
+  private _config;
 
-  config(options: RedisInterface): RedisProvider {
+  config(options): RedisProvider {
     this._config = options;
     return this;
   }
@@ -24,7 +23,7 @@ export class RedisProvider {
     const schema = this.schema;
     const Model = schema.define(`${database}:${name}`, attributes);
 
-    Model.prototype.expiresIn = function(time): Schema {
+    Model.prototype.expiresIn = function (time): Schema {
       schema.client.expire(`${database}:${name}:${this.id}`, time / 1000);
 
       return this;

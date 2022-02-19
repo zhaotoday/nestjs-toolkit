@@ -5,11 +5,10 @@ import {
   NotFoundException
 } from "@nestjs/common";
 import { SmsProvider } from "./sms.provider";
-import { SmsCaptchaInterface } from "../interfaces/sms-captcha.interface";
 
 @Injectable()
 export class SmsCaptchaProvider {
-  private _config: SmsCaptchaInterface;
+  private _config;
 
   constructor(
     public storageProvider: StorageProvider,
@@ -17,7 +16,7 @@ export class SmsCaptchaProvider {
     public smsProvider: SmsProvider
   ) {}
 
-  config(options: SmsCaptchaInterface): SmsCaptchaProvider {
+  config(options): SmsCaptchaProvider {
     this._config = options;
     return this;
   }

@@ -1,8 +1,6 @@
 import { Injectable } from "@nestjs/common";
-import { SmsInterface } from "../interfaces/sms.interface";
 import { HelpersProvider } from "./helpers.provider";
-
-const QCloudSms = require("qcloudsms_js");
+import * as QCloudSms from "qcloudsms_js";
 
 @Injectable()
 export class SmsProvider {
@@ -10,7 +8,7 @@ export class SmsProvider {
 
   public sss: any;
 
-  private _config: SmsInterface;
+  private _config;
 
   constructor(public helpersProvider: HelpersProvider) {}
 
