@@ -1,4 +1,5 @@
-import { ApiProperty } from "@nestjs/swagger";
+import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
+import { Is } from "../enums/is.enum";
 
 export class UserDto {
   @ApiProperty({
@@ -79,4 +80,42 @@ export class UserDto {
     example: "omMee4tymy2V-axAKL5EpKwUuWG8",
   })
   wxWebOpenId: string;
+
+  @ApiProperty({
+    description: "生日",
+    example: "1985-02-05",
+  })
+  @ApiPropertyOptional()
+  birthday?: string;
+
+  @ApiProperty({
+    description: "语言",
+    example: "zh_CN",
+  })
+  language: string;
+
+  @ApiProperty({
+    description: "国家",
+    example: "China",
+  })
+  country: string;
+
+  @ApiProperty({
+    description: "省份",
+    example: "Fujian",
+  })
+  province: string;
+
+  @ApiProperty({
+    description: "城市",
+    example: "Fuzhou",
+  })
+  city: string;
+
+  @ApiProperty({
+    description: "状态",
+    example: Is.True,
+  })
+  @ApiPropertyOptional()
+  status?: number;
 }

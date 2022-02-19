@@ -1,5 +1,6 @@
 import { Column, DataType, Model, Table as $Table } from "sequelize-typescript";
 import { Gender } from "../enums/gender.enum";
+import { Is } from "../enums/is.enum";
 
 @$Table({
   tableName: "users",
@@ -100,4 +101,41 @@ export class User extends Model {
     comment: "微信网站应用 OpenId",
   })
   wxWebOpenId: string;
+
+  @Column({
+    type: DataType.STRING(10),
+    comment: "生日",
+  })
+  birthday: string;
+
+  @Column({
+    type: DataType.STRING(50),
+    comment: "语言",
+  })
+  language: string;
+
+  @Column({
+    type: DataType.STRING(50),
+    comment: "国家",
+  })
+  country: string;
+
+  @Column({
+    type: DataType.STRING(50),
+    comment: "省份",
+  })
+  province: string;
+
+  @Column({
+    type: DataType.STRING(50),
+    comment: "城市",
+  })
+  city: string;
+
+  @Column({
+    type: DataType.TINYINT({ length: 1 }),
+    comment: "状态",
+    defaultValue: Is.True,
+  })
+  status: number;
 }
