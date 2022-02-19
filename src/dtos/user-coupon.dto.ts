@@ -1,29 +1,29 @@
 import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { Is } from "../enums/is.enum";
 
-export class WxUserCouponDto {
+export class UserCouponDto {
   @ApiProperty({
     description: "ID",
-    example: 1
+    example: 1,
   })
   @ApiPropertyOptional()
   id?: number;
 
   @ApiProperty({
-    description: "微信用户 ID",
-    example: 1
+    description: "用户 ID",
+    example: 1,
   })
-  wxUserId: number;
+  userId: number;
 
   @ApiProperty({
     description: "优惠券 ID",
-    example: 1
+    example: 1,
   })
   couponId: number;
 
   @ApiProperty({
     description: "是否已使用",
-    example: Is.False
+    example: Is.False,
   })
   status: number;
 }

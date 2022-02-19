@@ -2,10 +2,10 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
 import { Is } from "../enums/is.enum";
 
 @Table({
-  tableName: "wxUserCoupons",
-  comment: "微信用户优惠券"
+  tableName: "userCoupons",
+  comment: "用户优惠券"
 })
-export class WxUserCoupon extends Model {
+export class UserCoupon extends Model {
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     primaryKey: true,
