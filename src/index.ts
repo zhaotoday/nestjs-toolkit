@@ -111,28 +111,6 @@ export * from "./enums/wx-user-type.enum";
 
 export * from "./filters/all-exceptions.filter";
 
-export * from "./interfaces/app.interface";
-export * from "./interfaces/base-config.interface";
-export * from "./interfaces/captcha.interface";
-export * from "./interfaces/config.interface";
-export * from "./interfaces/env-config.interface";
-export * from "./interfaces/jwt-options.interface";
-export * from "./interfaces/mail.interface";
-export * from "./interfaces/mail-captcha.interface";
-export * from "./interfaces/mp.interface";
-export * from "./interfaces/oa.interface";
-export * from "./interfaces/merchant.interface";
-export * from "./interfaces/redis.interface";
-export * from "./interfaces/sms.interface";
-export * from "./interfaces/sms-captcha.interface";
-export * from "./interfaces/sms-template-ids.interface";
-export * from "./interfaces/svg-captcha.interface";
-export * from "./interfaces/storage.interface";
-export * from "./interfaces/tencent-cloud.interface";
-export * from "./interfaces/tm.interface";
-export * from "./interfaces/tm-template-ids.interface";
-export * from "./interfaces/wechatpay.interface";
-
 export * from "./pipes/validation.pipe";
 
 export * from "./services/base.service";
