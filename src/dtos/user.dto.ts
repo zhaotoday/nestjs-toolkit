@@ -1,47 +1,82 @@
-import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
-import { Is } from "../enums/is.enum";
+import { ApiProperty } from "@nestjs/swagger";
 
 export class UserDto {
   @ApiProperty({
-    description: "ID",
-    example: 1
+    description: "昵称",
+    example: "心晴",
   })
-  @ApiPropertyOptional()
-  id?: number;
-
-  @ApiProperty({
-    description: "微信用户 ID",
-    example: 1
-  })
-  wxUserId: number;
+  nickName: string;
 
   @ApiProperty({
     description: "姓名",
-    example: "赵金添"
+    example: "赵金添",
   })
   name: string;
 
   @ApiProperty({
-    description: "手机号",
-    example: "13950442340"
+    description: "手机号码",
+    example: "13950442340",
   })
   phoneNumber: string;
 
   @ApiProperty({
-    description: "角色",
-    example: "Deliverer"
+    description: "性别",
+    example: 1,
   })
-  role: string;
+  gender: number;
 
   @ApiProperty({
-    description: "状态",
-    example: Is.True
+    description: "邮箱",
+    example: "729234283@qq.com",
   })
-  status: number;
+  mail: string;
 
   @ApiProperty({
-    description: "排序",
-    example: 1
+    description: "账户密码",
+    example: "$2a$10$JwaFlTfBWQsKmQ2riQtNbeptPJsYWd4z4MaMvCI.lQoIfTgGBBzLa",
   })
-  order: number;
+  hashedPassword: string;
+
+  @ApiProperty({
+    description: "自定义头像文件 ID",
+    example: 1,
+  })
+  avatarFileId: number;
+
+  @ApiProperty({
+    description: "微信昵称",
+    example: "心晴",
+  })
+  wxNickName: string;
+
+  @ApiProperty({
+    description: "微信头像",
+    example:
+      "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eopRYpiak5MdicbcLY43zibSP1HTnqU6yHhqnQ614sxV6slPpxJzgXfuzJczSnd2DnAv5uKyu5TnZbdg/132",
+  })
+  wxAvatarUrl: string;
+
+  @ApiProperty({
+    description: "微信 UnionId",
+    example: "o-2fp5rjHIq5xE52gGwriP1qFhf8",
+  })
+  wxUnionId: string;
+
+  @ApiProperty({
+    description: "微信小程序 OpenId",
+    example: "omMee4tymy2V-axAKL5EpKwUuWG8",
+  })
+  wxMpOpenId: string;
+
+  @ApiProperty({
+    description: "微信移动应用 OpenId",
+    example: "omMee4tymy2V-axAKL5EpKwUuWG8",
+  })
+  wxAppOpenId: string;
+
+  @ApiProperty({
+    description: "微信网站应用 OpenId",
+    example: "omMee4tymy2V-axAKL5EpKwUuWG8",
+  })
+  wxWebOpenId: string;
 }
