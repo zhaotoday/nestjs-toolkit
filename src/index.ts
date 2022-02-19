@@ -1,8 +1,5 @@
 export * from "./config/base-default.config";
 
-export * from "./core/base.controller";
-export * from "./core/base.service";
-
 export * from "./dicts/address-tag.dict";
 export * from "./dicts/blood-group.dict";
 export * from "./dicts/certificate-type.dict";
@@ -19,6 +16,8 @@ export * from "./dicts/order-status.dict";
 export * from "./dicts/point-type.dict";
 export * from "./dicts/publish-status.dict";
 export * from "./dicts/withdraw-status.dict";
+
+export * from "./controllers/base.controller";
 
 export * from "./dtos/ad.dto";
 export * from "./dtos/address.dto";
@@ -55,7 +54,6 @@ export * from "./dtos/user.dto";
 export * from "./dtos/user-account-login.dto";
 export * from "./dtos/user-account-register.dto";
 export * from "./dtos/user-coupon.dto";
-export * from "./dtos/user-mail-bind.dto";
 export * from "./dtos/user-phone-number-bind.dto";
 export * from "./dtos/user-reset-password.dto";
 export * from "./dtos/user-send-mail-captcha.dto";
@@ -136,6 +134,8 @@ export * from "./interfaces/tm-template-ids.interface";
 export * from "./interfaces/wechatpay.interface";
 
 export * from "./pipes/validation.pipe";
+
+export * from "./services/base.service";
 
 export * from "./shared/cos.provider";
 export * from "./shared/helpers.provider";
