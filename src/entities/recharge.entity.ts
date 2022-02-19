@@ -6,14 +6,6 @@ import { OrderStatus } from "../enums/order-status.enum";
   comment: "充值"
 })
 export class Recharge extends Model {
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    primaryKey: true,
-    autoIncrement: true,
-    allowNull: false,
-    comment: "ID"
-  })
-  id: number;
 
   @Column({
     type: DataType.STRING(16),

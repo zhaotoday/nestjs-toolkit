@@ -6,14 +6,6 @@ import { Is } from "../enums/is.enum";
   comment: "广告"
 })
 export class Ad extends Model {
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    primaryKey: true,
-    autoIncrement: true,
-    allowNull: false,
-    comment: "ID"
-  })
-  id: number;
 
   @Column({
     type: DataType.STRING(200),

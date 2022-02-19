@@ -6,14 +6,6 @@ import { CheckStatus } from "../enums/check-status.enum";
   comment: "分销员申请"
 })
 export class DistributorApplication extends Model {
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    primaryKey: true,
-    autoIncrement: true,
-    allowNull: false,
-    comment: "ID"
-  })
-  id: number;
 
   @Column({
     type: DataType.TINYINT({ length: 1 }),

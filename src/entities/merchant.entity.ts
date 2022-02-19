@@ -6,14 +6,6 @@ import { CheckStatus } from "../enums/check-status.enum";
   comment: "商家"
 })
 export class Merchant extends Model {
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    primaryKey: true,
-    autoIncrement: true,
-    allowNull: false,
-    comment: "ID"
-  })
-  id: number;
 
   @Column({
     type: DataType.STRING(200),

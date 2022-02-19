@@ -8,14 +8,6 @@ import { Gender } from "../enums/gender.enum";
   comment: "地址"
 })
 export class Address extends Model {
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    primaryKey: true,
-    autoIncrement: true,
-    allowNull: false,
-    comment: "ID"
-  })
-  id: number;
 
   @Column({
     type: DataType.STRING(100),

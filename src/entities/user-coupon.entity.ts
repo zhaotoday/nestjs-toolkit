@@ -6,14 +6,6 @@ import { Is } from "../enums/is.enum";
   comment: "用户优惠券"
 })
 export class UserCoupon extends Model {
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    primaryKey: true,
-    autoIncrement: true,
-    allowNull: false,
-    comment: "ID"
-  })
-  id: number;
 
   @Column({
     type: DataType.TINYINT({ length: 1 }),

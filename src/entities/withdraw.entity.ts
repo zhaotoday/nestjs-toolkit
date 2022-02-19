@@ -6,14 +6,6 @@ import { WithdrawStatus } from "../enums/withdraw-status.enum";
   comment: "提现"
 })
 export class Withdraw extends Model {
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    primaryKey: true,
-    autoIncrement: true,
-    allowNull: false,
-    comment: "ID"
-  })
-  id: number;
 
   @Column({
     type: DataType.STRING(16),

@@ -5,14 +5,6 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
   comment: "已购商品"
 })
 export class BoughtProduct extends Model {
-  @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    primaryKey: true,
-    autoIncrement: true,
-    allowNull: false,
-    comment: "ID"
-  })
-  id: number;
 
   @Column({
     type: DataType.JSON,
