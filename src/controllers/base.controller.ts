@@ -1,10 +1,9 @@
 import * as jwt from "jsonwebtoken";
-import { JwtOptionsInterface } from "../interfaces/jwt-options.interface";
 
 export class BaseController {
-  public jwtConfig: JwtOptionsInterface;
+  public jwtConfig;
 
-  public repository: any;
+  public repository;
 
   public include: Object;
 

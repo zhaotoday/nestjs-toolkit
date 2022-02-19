@@ -1,5 +1,5 @@
 import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
-import { WxUserLoginType } from "nestjs-toolkit";
+import { WxUserLoginType } from "../enums/wx-user-login-type.enum";
 
 export class UserWxBindDto {
   @ApiProperty({
