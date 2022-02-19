@@ -61,6 +61,7 @@ export * from "./dtos/user-wx-bind.dto";
 export * from "./dtos/user-wx-login.dto";
 export * from "./dtos/wx-api-jssdk-config";
 export * from "./dtos/withdraw.dto";
+export * from "./dtos/wx-user.dto";
 
 export * from "./entities/ad.entity";
 export * from "./entities/address.entity";
