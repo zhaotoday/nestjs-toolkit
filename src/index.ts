@@ -115,7 +115,6 @@ export * from "./pipes/validation.pipe";
 
 export * from "./services/base.service";
 
-export * from "./shared/cos.provider";
 export * from "./shared/helpers.provider";
 export * from "./shared/redis.provider";
 export * from "./shared/sms.provider";
