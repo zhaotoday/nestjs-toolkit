@@ -22,25 +22,25 @@ export class SmsCaptchaProvider {
   }
 
   init(): SmsCaptchaProvider {
-    const { redisConfig, smsConfig } = this._config;
+    const { redis, sms } = this._config;
 
     this.storageProvider
       .config({
-        redis: redisConfig,
+        redis: redis,
         name: "smsCaptcha",
-        expiresIn: smsConfig.captcha.storage.expiresIn,
+        expiresIn: sms.captcha.storage.expiresIn,
       })
       .init();
 
     this.waitStorageProvider
       .config({
-        redis: redisConfig,
+        redis: redis,
         name: "smsCaptchaWait",
-        expiresIn: smsConfig.captcha.storage.waitExpiresIn,
+        expiresIn: sms.captcha.storage.waitExpiresIn,
       })
       .init();
 
-    this.smsProvider.config(smsConfig).init();
+    this.smsProvider.config(sms).init();
 
     return this;
   }
