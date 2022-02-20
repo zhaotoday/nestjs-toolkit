@@ -18,7 +18,9 @@ export class SmsProvider {
   }
 
   init(): SmsProvider {
-    const { appId, appKey } = this._config;
+    const {
+      config: { appId, appKey },
+    } = this._config;
 
     this.sms = QCloudSms(appId, appKey);
     this.sss = this.sms.SmsSingleSender();
@@ -32,7 +34,7 @@ export class SmsProvider {
       phoneNumber,
       templateId,
       params,
-      this._config.sign,
+      this._config.config.sign,
       "",
       "",
       function () {}
@@ -46,9 +48,9 @@ export class SmsProvider {
     this.sss.sendWithParam(
       86,
       phoneNumber,
-      this._config.templateIds.captcha,
+      this._config.captcha.templateId,
       params,
-      this._config.sign,
+      this._config.config.sign,
       "",
       "",
       function () {}

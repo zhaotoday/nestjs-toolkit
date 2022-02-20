@@ -2,7 +2,7 @@ import { StorageProvider } from "./storage.provider";
 import {
   Injectable,
   NotAcceptableException,
-  NotFoundException
+  NotFoundException,
 } from "@nestjs/common";
 import { SmsProvider } from "./sms.provider";
 
@@ -22,25 +22,25 @@ export class SmsCaptchaProvider {
   }
 
   init(): SmsCaptchaProvider {
-    const { redis, captcha, sms } = this._config;
+    const { redisConfig, smsConfig } = this._config;
 
     this.storageProvider
       .config({
-        redis,
+        redis: redisConfig,
         name: "smsCaptcha",
-        expiresIn: captcha.expiresIn
+        expiresIn: smsConfig.captcha.storage.expiresIn,
       })
       .init();
 
     this.waitStorageProvider
       .config({
-        redis,
+        redis: redisConfig,
         name: "smsCaptchaWait",
-        expiresIn: captcha.waitExpiresIn
+        expiresIn: smsConfig.captcha.storage.waitExpiresIn,
       })
       .init();
 
-    this.smsProvider.config(sms).init();
+    this.smsProvider.config(smsConfig).init();
 
     return this;
   }
