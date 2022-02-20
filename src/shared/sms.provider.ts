@@ -28,9 +28,9 @@ export class SmsProvider {
     return this;
   }
 
-  send({ phoneNumber, templateId, params }): void {
+  send({ countryCode = "86", phoneNumber, templateId, params }): void {
     this.sss.sendWithParam(
-      86,
+      countryCode,
       phoneNumber,
       templateId,
       params,
@@ -41,12 +41,12 @@ export class SmsProvider {
     );
   }
 
-  sendCaptcha({ phoneNumber }): string {
+  sendCaptcha({ countryCode = "86", phoneNumber }): string {
     const random = this.helpersProvider.getRandom(6);
     const params = [random, "10"];
 
     this.sss.sendWithParam(
-      86,
+      countryCode,
       phoneNumber,
       this._config.captcha.templateId,
       params,
