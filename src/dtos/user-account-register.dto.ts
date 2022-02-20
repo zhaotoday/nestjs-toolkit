@@ -2,6 +2,12 @@ import { ApiProperty } from "@nestjs/swagger";
 
 export class UserAccountRegisterDto {
   @ApiProperty({
+    description: "姓名",
+    example: "赵金添",
+  })
+  name: string;
+
+  @ApiProperty({
     description: "昵称",
     example: "心晴",
   })
