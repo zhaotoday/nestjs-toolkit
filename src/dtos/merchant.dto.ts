@@ -28,10 +28,10 @@ export class MerchantDto {
   addressId: number;
 
   @ApiProperty({
-    description: "图片 ID 集合",
+    description: "图片文件 ID 集合",
     example: [1, 2, 3]
   })
-  images: number[];
+  imageFileIds: number[];
 
   @ApiProperty({
     description: "联系人",

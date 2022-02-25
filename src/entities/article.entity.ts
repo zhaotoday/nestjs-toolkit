@@ -32,9 +32,9 @@ export class Article extends Model {
 
   @Column({
     type: DataType.INTEGER.UNSIGNED,
-    comment: "封面图片 ID",
+    comment: "封面图片文件 ID",
   })
-  image: number;
+  imageFileId: number;
 
   @Column({
     type: DataType.STRING(200),

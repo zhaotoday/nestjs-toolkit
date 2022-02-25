@@ -16,10 +16,10 @@ export class AdDto {
   title: string;
 
   @ApiProperty({
-    description: "图片 ID",
+    description: "图片文件 ID",
     example: 1
   })
-  image: number;
+  imageFileId: number;
 
   @ApiProperty({
     description: "链接",
