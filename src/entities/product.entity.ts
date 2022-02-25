@@ -57,7 +57,7 @@ export class Product extends Model {
     type: DataType.JSON,
     comment: "图片 ID 集合",
   })
-  pictureIds: number[];
+  images: number[];
 
   @Column({
     type: DataType.TEXT({ length: "tiny" }),

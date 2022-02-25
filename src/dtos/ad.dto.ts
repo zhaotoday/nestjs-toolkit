@@ -19,7 +19,7 @@ export class AdDto {
     description: "图片 ID",
     example: 1
   })
-  pictureId: number;
+  image: number;
 
   @ApiProperty({
     description: "链接",

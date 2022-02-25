@@ -44,7 +44,7 @@ export class ArticleDto {
     description: "封面图片 ID",
     example: 1
   })
-  pictureId: number;
+  image: number;
 
   @ApiProperty({
     description: "链接",

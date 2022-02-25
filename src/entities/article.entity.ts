@@ -34,7 +34,7 @@ export class Article extends Model {
     type: DataType.INTEGER.UNSIGNED,
     comment: "封面图片 ID",
   })
-  pictureId: number;
+  image: number;
 
   @Column({
     type: DataType.STRING(200),
