@@ -21,16 +21,16 @@ export class CategoryDto {
   name: string;
 
   @ApiProperty({
-    description: "图标 ID",
+    description: "图标文件 ID",
     example: 1
   })
-  iconId: number;
+  iconFileId: number;
 
   @ApiProperty({
-    description: "Banner ID",
+    description: "Banner 文件 ID",
     example: 1
   })
-  bannerId: number;
+  bannerFileId: number;
 
   @ApiProperty({
     description: "描述",

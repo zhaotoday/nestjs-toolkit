@@ -13,15 +13,15 @@ export class Category extends Model {
 
   @Column({
     type: DataType.INTEGER.UNSIGNED,
-    comment: "图标 ID",
+    comment: "图标文件 ID",
   })
-  iconId: number;
+  iconFileId: number;
 
   @Column({
     type: DataType.INTEGER.UNSIGNED,
     comment: "Banner ID",
   })
-  bannerId: number;
+  bannerFileId: number;
 
   @Column({
     type: DataType.TEXT({ length: "tiny" }),
