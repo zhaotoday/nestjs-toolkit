@@ -46,6 +46,12 @@ export class OrderDto {
   paidAt: number;
 
   @ApiProperty({
+    description: "配送时间",
+    example: 1581689999001,
+  })
+  distributedAt: number;
+
+  @ApiProperty({
     description: "完成时间",
     example: 1581689999001,
   })

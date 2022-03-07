@@ -41,6 +41,12 @@ export class Order extends Model {
 
   @Column({
     type: DataType.BIGINT({ length: 13 }),
+    comment: "配送时间",
+  })
+  distributedAt: number;
+
+  @Column({
+    type: DataType.BIGINT({ length: 13 }),
     comment: "完成时间",
   })
   finishedAt: number;
