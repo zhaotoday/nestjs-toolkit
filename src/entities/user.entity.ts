@@ -23,9 +23,9 @@ export class User extends Model {
     type: DataType.CHAR(11),
     unique: true,
     comment: "手机号码",
-    validate: {
-      is: /^1\d{2}\s?\d{4}\s?\d{4}$/,
-    },
+    // validate: {
+    //   is: /^1\d{2}\s?\d{4}\s?\d{4}$/,
+    // },
   })
   phoneNumber: string;
 
