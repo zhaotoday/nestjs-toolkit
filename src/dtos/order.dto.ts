@@ -49,7 +49,7 @@ export class OrderDto {
     description: "配送时间",
     example: 1581689999001,
   })
-  distributedAt: number;
+  startedToDistributeAt: number;
 
   @ApiProperty({
     description: "完成时间",
