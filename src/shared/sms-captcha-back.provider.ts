@@ -49,7 +49,7 @@ export class SmsCaptchaProvider {
     const waitStorageRes = await this.storageProvider.get(phoneNumber);
 
     if (waitStorageRes) {
-      throw new NotAcceptableException("Server is busy");
+      throw new NotAcceptableException("操作过于频繁，请稍后再试");
     } else {
       const captcha = this.smsProvider.sendCaptcha({
         countryCode,
@@ -67,9 +67,9 @@ export class SmsCaptchaProvider {
     const storageRes = await this.storageProvider.get(phoneNumber);
 
     if (!storageRes) {
-      throw new NotFoundException("Wrong captcha");
+      throw new NotFoundException("验证码不存在");
     } else if (captcha !== storageRes) {
-      throw new NotFoundException("Wrong captcha");
+      throw new NotFoundException("验证码错误");
     } else {
       return { phoneNumber, captcha };
     }
