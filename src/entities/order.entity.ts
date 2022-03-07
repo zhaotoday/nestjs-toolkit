@@ -40,6 +40,12 @@ export class Order extends Model {
   paidAt: number;
 
   @Column({
+    type: DataType.BIGINT({ length: 13 }),
+    comment: "完成时间",
+  })
+  finishedAt: number;
+
+  @Column({
     type: DataType.ENUM.apply(null, Object.values(OrderPayment)),
     comment: "支付类型",
   })
