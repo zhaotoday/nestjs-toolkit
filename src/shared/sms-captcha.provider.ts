@@ -45,13 +45,16 @@ export class SmsCaptchaProvider {
     return this;
   }
 
-  async send({ phoneNumber }): Promise<object | unknown> {
+  async send({ countryCode = "86", phoneNumber }): Promise<object | unknown> {
     const waitStorageRes = await this.storageProvider.get(phoneNumber);
 
     if (waitStorageRes) {
       throw new NotAcceptableException("操作过于频繁，请稍后再试");
     } else {
-      const captcha = this.smsProvider.sendCaptcha({ phoneNumber });
+      const captcha = this.smsProvider.sendCaptcha({
+        countryCode,
+        phoneNumber,
+      });
 
       await this.storageProvider.set(phoneNumber, captcha);
       await this.waitStorageProvider.set(phoneNumber, captcha);
