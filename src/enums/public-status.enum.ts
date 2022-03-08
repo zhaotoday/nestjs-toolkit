@@ -1,4 +1,4 @@
 export enum PublicStatus {
-  On = "On",
-  Off = "Off",
+  On = 1,
+  Off = 0,
 }
