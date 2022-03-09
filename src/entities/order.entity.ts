@@ -14,12 +14,6 @@ export class Order extends Model {
   no: string;
 
   @Column({
-    type: DataType.INTEGER.UNSIGNED,
-    comment: "优惠券 ID",
-  })
-  wxUserCouponId: number;
-
-  @Column({
     type: DataType.FLOAT({ length: 10 }),
     comment: "支付金额",
     defaultValue: 0,

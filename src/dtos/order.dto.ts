@@ -16,18 +16,6 @@ export class OrderDto {
   no: string;
 
   @ApiProperty({
-    description: "收获地址 ID",
-    example: 1,
-  })
-  addressId: number;
-
-  @ApiProperty({
-    description: "优惠券 ID",
-    example: 1,
-  })
-  wxUserCouponId: number;
-
-  @ApiProperty({
     description: "支付金额",
     example: 100.01,
   })
