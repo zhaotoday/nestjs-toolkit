@@ -102,7 +102,6 @@ export * from "./enums/order-payment.enum";
 export * from "./enums/order-status.enum";
 export * from "./enums/order-type.enum";
 export * from "./enums/point-type.enum";
-export * from "./enums/public-status.enum";
 export * from "./enums/withdraw-status.enum";
 export * from "./enums/wx-user-login-type.enum";
 
