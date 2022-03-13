@@ -1,12 +1,12 @@
 import * as jwt from "jsonwebtoken";
-import { FindAttributeOptions, Includeable, IncludeOptions } from "sequelize";
+import { FindAttributeOptions } from "sequelize";
 
 export class BaseController {
   public jwtConfig;
 
   public repository;
 
-  public include: Includeable | Includeable[];
+  public include: object;
 
   public attributes: FindAttributeOptions;
 
