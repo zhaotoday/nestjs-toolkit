@@ -1,5 +1,16 @@
-import { Column, DataType, Model, Table } from "sequelize-typescript";
+import {
+  BeforeBulkCreate,
+  BeforeBulkUpdate,
+  BeforeCreate,
+  Column,
+  DataType,
+  Model,
+  Table,
+} from "sequelize-typescript";
 import { Is } from "../enums/is.enum";
+import { HelpersProvider } from "../shared/helpers.provider";
+
+const { getPasswordHash } = new HelpersProvider();
 
 @Table({
   tableName: "managers",
@@ -16,7 +27,7 @@ export class Manager extends Model {
     type: DataType.STRING(100),
     comment: "密码",
   })
-  password: string;
+  hashedPassword: string;
 
   @Column({
     type: DataType.JSON,
@@ -30,4 +41,27 @@ export class Manager extends Model {
     defaultValue: Is.True,
   })
   status: number;
+
+  @BeforeCreate
+  static onBeforeCreate(instance) {
+    if (instance.hashedPassword) {
+      instance.hashedPassword = getPasswordHash(instance.hashedPassword);
+    }
+  }
+
+  @BeforeBulkUpdate
+  static onBeforeBulkUpdate({ attributes }) {
+    if (attributes.hashedPassword) {
+      attributes.hashedPassword = getPasswordHash(attributes.hashedPassword);
+    }
+  }
+
+  @BeforeBulkCreate
+  static onBeforeBulkCreate(instances) {
+    instances.forEach((instance) => {
+      if (instance.hashedPassword) {
+        instance.hashedPassword = getPasswordHash(instance.hashedPassword);
+      }
+    });
+  }
 }

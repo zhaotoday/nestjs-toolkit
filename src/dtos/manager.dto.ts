@@ -17,9 +17,9 @@ export class ManagerDto {
 
   @ApiProperty({
     description: "密码",
-    example: "123456"
+    example: "$2a$10$UCzVq2ZZxowGiQvg.EXVd.UixD2Gnnxh.MRiDiMajyVpH9rc5Xg3G"
   })
-  password: string;
+  hashedPassword: string;
 
   @ApiProperty({
     type: "json",
