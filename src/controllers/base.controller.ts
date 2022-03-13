@@ -1,17 +1,20 @@
 import * as jwt from "jsonwebtoken";
+import { FindAttributeOptions, IncludeOptions } from "sequelize";
 
 export class BaseController {
   public jwtConfig;
 
   public repository;
 
-  public include: Object;
+  public include: IncludeOptions;
+
+  public attributes: FindAttributeOptions;
 
   public orderable: boolean = false;
 
   sign(data): Promise<string> {
     return jwt.sign({ data }, this.jwtConfig.secret, {
-      expiresIn: this.jwtConfig.expiresIn
+      expiresIn: this.jwtConfig.expiresIn,
     });
   }
 
