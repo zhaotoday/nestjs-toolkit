@@ -31,6 +31,12 @@ export class Merchant extends Model {
   phoneNumber: string;
 
   @Column({
+    type: DataType.STRING(100),
+    comment: "密码",
+  })
+  hashedPassword: string;
+
+  @Column({
     type: DataType.TEXT({ length: "tiny" }),
     comment: "备注",
   })
