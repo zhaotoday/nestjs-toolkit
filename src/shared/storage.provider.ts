@@ -23,17 +23,17 @@ export class StorageProvider {
         name: {
           type: String,
           length: 50,
-          index: true
+          index: true,
         },
         key: {
           type: String,
           length: 50,
-          index: true
+          index: true,
         },
         value: {
           type: String,
-          length: 500
-        }
+          length: 500,
+        },
       });
     return this;
   }
@@ -41,9 +41,9 @@ export class StorageProvider {
   async get(key): Promise<string | null> {
     const instances = (
       await this.Model.all({
-        where: { name: this._config.name, key }
+        where: { name: this._config.name, key },
       })
-    ).filter(item => item && item.id);
+    ).filter((item) => item && item.id);
 
     return instances[0] && instances[0].id ? instances[0].value : null;
   }
@@ -52,9 +52,9 @@ export class StorageProvider {
     const { name, expiresIn } = this._config;
     const oldInstances = (
       await this.Model.all({
-        where: { name, key }
+        where: { name, key },
       })
-    ).filter(item => item && item.id);
+    ).filter((item) => item && item.id);
 
     if (oldInstances[0] && oldInstances[0].id) {
       await oldInstances[0].destroy();

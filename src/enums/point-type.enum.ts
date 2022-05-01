@@ -3,5 +3,5 @@ export enum PointType {
   BuyProductGiving = "BuyProductGiving",
   SellProduct = "SellProduct",
   IncreaseOrDecrease = "IncreaseOrDecrease",
-  Commission = "Commission"
+  Commission = "Commission",
 }

@@ -1,10 +1,10 @@
 export const PublishStatusDict = [
   {
     value: 1,
-    label: "上架"
+    label: "上架",
   },
   {
     value: 0,
-    label: "下架"
-  }
+    label: "下架",
+  },
 ];

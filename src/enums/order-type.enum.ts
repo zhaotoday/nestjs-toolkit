@@ -1,4 +1,4 @@
 export enum OrderType {
   WeChatPay = "WeChatPay",
-  PointPay = "PointPay"
+  PointPay = "PointPay",
 }

@@ -5,7 +5,7 @@ import * as dayjs from "dayjs";
 @Injectable()
 export class HelpersProvider {
   sleep(time) {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       setTimeout(resolve, time);
     });
   }
@@ -44,7 +44,7 @@ export class HelpersProvider {
       case !!req.path.match(findByPkOrUpdateReg):
         return {
           route: `${req.method}(:id)`,
-          id: +req.path.match(findByPkOrUpdateReg)[1]
+          id: +req.path.match(findByPkOrUpdateReg)[1],
         };
 
       default:
@@ -57,11 +57,11 @@ export class HelpersProvider {
       paranoid: false,
       where: {
         id: { $in: ids },
-        deletedAt: { $not: null }
-      }
+        deletedAt: { $not: null },
+      },
     });
 
-    return deletedRes[0] ? deletedRes.map(item => item.id) : [];
+    return deletedRes[0] ? deletedRes.map((item) => item.id) : [];
   }
 
   entityToRepository(entity) {
@@ -76,7 +76,7 @@ export class HelpersProvider {
 
   getItem(items, key, val) {
     return items && items.length
-      ? items.find(item => item[key] === val) || {}
+      ? items.find((item) => item[key] === val) || {}
       : {};
   }
 }

@@ -1,30 +1,30 @@
 export const DressSizeDict = [
   {
     value: "XS",
-    label: "XS"
+    label: "XS",
   },
   {
     value: "S",
-    label: "S"
+    label: "S",
   },
   {
     value: "M",
-    label: "M"
+    label: "M",
   },
   {
     value: "L",
-    label: "L"
+    label: "L",
   },
   {
     value: "XL",
-    label: "XL"
+    label: "XL",
   },
   {
     value: "XXL",
-    label: "XXL"
+    label: "XXL",
   },
   {
     value: "XXXL",
-    label: "XXXL"
-  }
+    label: "XXXL",
+  },
 ];

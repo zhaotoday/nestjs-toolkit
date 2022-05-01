@@ -5,32 +5,32 @@ import { AddressTag } from "../enums/address-tag.enum";
 export class AddressDto {
   @ApiProperty({
     description: "ID",
-    example: 1
+    example: 1,
   })
   @ApiPropertyOptional()
   id?: number;
 
   @ApiProperty({
     description: "用户 ID",
-    example: 1
+    example: 1,
   })
   userId: number;
 
   @ApiProperty({
     description: "收货人",
-    example: "赵金添"
+    example: "赵金添",
   })
   name: string;
 
   @ApiProperty({
     description: "性别",
-    example: "1"
+    example: "1",
   })
   gender: string;
 
   @ApiProperty({
     description: "手机号",
-    example: "13950442340"
+    example: "13950442340",
   })
   phoneNumber: string;
 
@@ -45,26 +45,26 @@ export class AddressDto {
       district: "连江县",
       latitude: "26.239145",
       province: "福建省",
-      longitude: "119.398064"
-    }
+      longitude: "119.398064",
+    },
   })
   location: object;
 
   @ApiProperty({
     description: "门牌号",
-    example: "21号楼204"
+    example: "21号楼204",
   })
   room: string;
 
   @ApiProperty({
     description: "标签",
-    example: AddressTag.Home
+    example: AddressTag.Home,
   })
   tag: string;
 
   @ApiProperty({
     description: "是否默认",
-    example: Is.False
+    example: Is.False,
   })
   default: number;
 }

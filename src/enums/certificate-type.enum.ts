@@ -4,5 +4,5 @@ export enum CertificateType {
   MilitaryCertificate = "MilitaryCertificate",
   MembershipCertificate = "MembershipCertificate",
   PartyMemberCertificate = "PartyMemberCertificate",
-  HongKongMacauLaissezPasser = "HongKongMacauLaissezPasser"
+  HongKongMacauLaissezPasser = "HongKongMacauLaissezPasser",
 }

@@ -50,7 +50,8 @@ export class WeChatPayProvider {
       total_fee: amount * 100,
       spbill_create_ip: "123.12.12.123",
       notify_url: notifyUrl,
-      trade_type: this.wxUserLoginType === WxUserLoginType.App ? "APP" : "JSAPI",
+      trade_type:
+        this.wxUserLoginType === WxUserLoginType.App ? "APP" : "JSAPI",
     });
 
     return { unifiedOrder, extra };

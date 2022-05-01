@@ -4,5 +4,5 @@ export enum BloodGroup {
   AB = "AB",
   O = "O",
   RhPositive = "RhPositive",
-  RhNegative = "RhNegative"
+  RhNegative = "RhNegative",
 }
