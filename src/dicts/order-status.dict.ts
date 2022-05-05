@@ -1,18 +1,22 @@
 export const OrderStatusDict = [
   {
-    value: "ToPay",
     label: "待付款",
+    value: "ToPay",
   },
   {
-    value: "Paid",
     label: "已付款",
+    value: "Paid",
   },
   {
-    value: "Cancelled",
-    label: "已取消",
+    label: "配送中",
+    value: "Distributing",
   },
   {
+    label: "已完成",
     value: "Finished",
-    label: "完成",
+  },
+  {
+    label: "已取消",
+    value: "Cancelled",
   },
 ];

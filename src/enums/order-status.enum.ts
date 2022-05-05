@@ -1,6 +1,7 @@
 export enum OrderStatus {
   ToPay = "ToPay",
   Paid = "Paid",
-  Cancelled = "Cancelled",
+  Distributing = "Distributing",
   Finished = "Finished",
+  Cancelled = "Cancelled",
 }
