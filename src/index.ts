@@ -66,6 +66,7 @@ export * from "./dtos/wx-user.dto";
 
 export * from "./entities/ad.entity";
 export * from "./entities/address.entity";
+export * from "./entities/app-upgrade.entity";
 export * from "./entities/article.entity";
 export * from "./entities/bought-product.entity";
 export * from "./entities/category.entity";
@@ -88,6 +89,8 @@ export * from "./entities/user-coupon.entity";
 export * from "./entities/withdraw.entity";
 
 export * from "./enums/address-tag.enum";
+export * from "./enums/app-package-type.enum";
+export * from "./enums/app-platform.enum";
 export * from "./enums/blood-group.enum";
 export * from "./enums/certificate-type.enum";
 export * from "./enums/check-status.enum";
