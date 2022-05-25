@@ -20,6 +20,8 @@ export * from "./controllers/base.controller";
 
 export * from "./dtos/ad.dto";
 export * from "./dtos/address.dto";
+export * from "./dtos/app-upgrade.dto";
+export * from "./dtos/app-upgrade-check.dto";
 export * from "./dtos/article.dto";
 export * from "./dtos/bought-product.dto";
 export * from "./dtos/brand.dto";
@@ -105,6 +107,7 @@ export * from "./enums/order-payment.enum";
 export * from "./enums/order-status.enum";
 export * from "./enums/order-type.enum";
 export * from "./enums/point-type.enum";
+export * from "./enums/publish-status.enum";
 export * from "./enums/withdraw-status.enum";
 export * from "./enums/wx-user-login-type.enum";
 
