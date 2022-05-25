@@ -1,5 +1,7 @@
 export * from "./dicts/address-gender.dict";
 export * from "./dicts/address-tag.dict";
+export * from "./dicts/app-package-type.dict";
+export * from "./dicts/app-platform.dict";
 export * from "./dicts/blood-group.dict";
 export * from "./dicts/certificate-type.dict";
 export * from "./dicts/check-action.dict";
