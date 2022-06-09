@@ -70,6 +70,12 @@ export class UserDto {
   wxMpOpenId: string;
 
   @ApiProperty({
+    description: "微信公众号 H5 OpenId",
+    example: "omMee4tymy2V-axAKL5EpKwUuWG8",
+  })
+  wxOaOpenId: string;
+
+  @ApiProperty({
     description: "微信移动应用 OpenId",
     example: "omMee4tymy2V-axAKL5EpKwUuWG8",
   })
