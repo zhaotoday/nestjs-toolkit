@@ -92,6 +92,12 @@ export class User extends Model {
 
   @Column({
     type: DataType.CHAR(28),
+    comment: "微信公众号 H5 OpenId",
+  })
+  wxOaOpenId: string;
+
+  @Column({
+    type: DataType.CHAR(28),
     comment: "微信移动应用 OpenId",
   })
   wxAppOpenId: string;
