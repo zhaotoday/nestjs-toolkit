@@ -1,10 +1,10 @@
 import { Column, DataType, Model, Table } from "sequelize-typescript";
 
 @Table({
-  tableName: "collections",
-  comment: "收藏",
+  tableName: "collectedProducts",
+  comment: "已收藏的商品",
 })
-export class Collection extends Model {
+export class CollectedProduct extends Model {
   @Column({
     type: DataType.JSON,
     comment: "已收藏的商品 ID 集合",

@@ -28,8 +28,8 @@ export * from "./dtos/article.dto";
 export * from "./dtos/bought-product.dto";
 export * from "./dtos/brand.dto";
 export * from "./dtos/category.dto";
-export * from "./dtos/collection.dto";
-export * from "./dtos/collection-update-product-ids.dto";
+export * from "./dtos/collected-product.dto";
+export * from "./dtos/collected-product-update-product-ids.dto";
 export * from "./dtos/comment.dto";
 export * from "./dtos/commission.dto";
 export * from "./dtos/coupon.dto";
@@ -74,7 +74,7 @@ export * from "./entities/app-upgrade.entity";
 export * from "./entities/article.entity";
 export * from "./entities/bought-product.entity";
 export * from "./entities/category.entity";
-export * from "./entities/collection.entity";
+export * from "./entities/collected-product.entity";
 export * from "./entities/comment.entity";
 export * from "./entities/commission.entity";
 export * from "./entities/coupon.entity";
@@ -116,8 +116,6 @@ export * from "./enums/wx-user-login-type.enum";
 export * from "./filters/all-exceptions.filter";
 
 export * from "./pipes/validation.pipe";
-
-export * from "./services/base.service";
 
 export * from "./shared/cos.provider";
 export * from "./shared/helpers.provider";
