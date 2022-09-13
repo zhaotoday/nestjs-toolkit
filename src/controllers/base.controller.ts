@@ -10,7 +10,7 @@ export class BaseController {
 
   public attributes: FindAttributeOptions;
 
-  public orderable: boolean = false;
+  public hasOrder: boolean = false;
 
   sign(data): Promise<string> {
     return jwt.sign({ data }, this.jwtConfig.secret, {
