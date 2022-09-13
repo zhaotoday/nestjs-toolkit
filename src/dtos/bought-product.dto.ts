@@ -15,7 +15,7 @@ export class BoughtProductDto {
   userId: number;
 
   @ApiProperty({
-    description: "已购买的商品 ID 集合",
+    description: "已购买商品 ID 集合",
     example: [1, 2, 3],
   })
   productIds: number[];
