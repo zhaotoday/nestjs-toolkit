@@ -49,7 +49,7 @@ export class Order extends Model {
     type: DataType.ENUM.apply(null, Object.values(OrderPayment)),
     comment: "支付类型",
   })
-  payment: string;
+  payment: OrderPayment;
 
   @Column({
     type: DataType.TEXT({ length: "tiny" }),
