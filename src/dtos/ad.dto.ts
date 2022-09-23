@@ -31,7 +31,7 @@ export class AdDto {
     description: "状态",
     example: Is.True,
   })
-  status: number;
+  status: Is;
 
   @ApiProperty({
     description: "排序",
