@@ -13,7 +13,7 @@ export class PaymentCreateUnifiedOrderDto {
     description: "微信用户登录类型",
     example: WxUserLoginType.Mp,
   })
-  wxUserLoginType: string;
+  wxUserLoginType: WxUserLoginType;
 
   @ApiProperty({
     description: "购买商品",
@@ -30,7 +30,7 @@ export class PaymentCreateUnifiedOrderDto {
     description: "支付类型",
     example: OrderPayment.WeChatPay,
   })
-  payment: string;
+  payment: OrderPayment;
 
   @ApiProperty({
     description: "备注",

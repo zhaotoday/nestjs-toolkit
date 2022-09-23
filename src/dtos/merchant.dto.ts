@@ -60,5 +60,5 @@ export class MerchantDto {
     description: "状态",
     example: CheckStatus.Checking,
   })
-  status: number;
+  status: CheckStatus;
 }

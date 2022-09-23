@@ -6,7 +6,7 @@ export class UserWxLoginDto {
     description: "登录类型",
     example: WxUserLoginType.Mp,
   })
-  loginType: string;
+  loginType: WxUserLoginType;
 
   @ApiProperty({
     description: "用户登录凭证",
