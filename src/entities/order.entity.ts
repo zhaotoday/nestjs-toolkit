@@ -62,7 +62,7 @@ export class Order extends Model {
     comment: "状态",
     defaultValue: OrderStatus.ToPay,
   })
-  status: string;
+  status: OrderStatus;
 
   @Column({
     type: DataType.INTEGER.UNSIGNED,

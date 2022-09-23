@@ -60,7 +60,7 @@ export class AddressDto {
     description: "标签",
     example: AddressTag.Home,
   })
-  tag: string;
+  tag: AddressTag;
 
   @ApiProperty({
     description: "是否默认",

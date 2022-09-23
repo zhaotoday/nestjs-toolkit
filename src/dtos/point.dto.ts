@@ -25,7 +25,7 @@ export class PointDto {
     description: "类型",
     example: PointType.BuyProductDeducting,
   })
-  type: string;
+  type: PointType;
 
   @ApiProperty({
     description: "积分值",

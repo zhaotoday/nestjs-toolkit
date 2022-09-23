@@ -8,13 +8,13 @@ export class AppUpgradeDto {
     description: "平台",
     example: AppPlatform.Android,
   })
-  platform: string;
+  platform: AppPlatform;
 
   @ApiProperty({
     description: "包类型",
     example: AppPackageType.Wgt,
   })
-  packageType: string;
+  packageType: AppPackageType;
 
   @ApiProperty({
     description: "版本名称",

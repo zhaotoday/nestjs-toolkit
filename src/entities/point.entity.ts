@@ -10,7 +10,7 @@ export class Point extends Model {
     type: DataType.ENUM.apply(null, Object.values(PointType)),
     comment: "类型",
   })
-  type: string;
+  type: PointType;
 
   @Column({
     type: DataType.INTEGER,

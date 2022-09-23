@@ -24,5 +24,5 @@ export class Recharge extends Model {
     comment: "状态",
     defaultValue: OrderStatus.ToPay,
   })
-  status: string;
+  status: OrderStatus;
 }

@@ -43,7 +43,7 @@ export class Address extends Model {
     type: DataType.ENUM.apply(null, Object.values(AddressTag)),
     comment: "标签",
   })
-  tag: string;
+  tag: AddressTag;
 
   @Column({
     type: DataType.TINYINT({ length: 1 }),

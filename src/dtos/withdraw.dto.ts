@@ -31,5 +31,5 @@ export class WithdrawDto {
     description: "状态",
     example: OrderStatus.ToPay,
   })
-  status: string;
+  status: OrderStatus;
 }

@@ -12,13 +12,13 @@ export class AppUpgrade extends Model {
     type: DataType.ENUM.apply(null, Object.values(AppPlatform)),
     comment: "平台",
   })
-  platform: string;
+  platform: AppPlatform;
 
   @Column({
     type: DataType.ENUM.apply(null, Object.values(AppPackageType)),
     comment: "包类型",
   })
-  packageType: string;
+  packageType: AppPackageType;
 
   @Column({
     type: DataType.STRING(100),

@@ -24,5 +24,5 @@ export class Withdraw extends Model {
     comment: "状态",
     defaultValue: WithdrawStatus.ToPay,
   })
-  status: string;
+  status: WithdrawStatus;
 }

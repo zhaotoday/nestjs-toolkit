@@ -49,7 +49,7 @@ export class OrderDto {
     description: "支付类型",
     example: OrderPayment.WeChatPay,
   })
-  payment: string;
+  payment: OrderPayment;
 
   @ApiProperty({
     description: "备注",
@@ -60,7 +60,7 @@ export class OrderDto {
     description: "状态",
     example: OrderStatus.ToPay,
   })
-  status: string;
+  status: OrderStatus;
 
   @ApiProperty({
     description: "配送员用户 ID",
