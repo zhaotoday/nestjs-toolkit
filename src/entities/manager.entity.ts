@@ -40,7 +40,7 @@ export class Manager extends Model {
     comment: "状态",
     defaultValue: Is.True,
   })
-  status: number;
+  status: Is;
 
   @BeforeCreate
   static onBeforeCreate(instance) {

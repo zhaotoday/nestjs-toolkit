@@ -143,5 +143,5 @@ export class User extends Model {
     comment: "状态",
     defaultValue: Is.True,
   })
-  status: number;
+  status: Is;
 }

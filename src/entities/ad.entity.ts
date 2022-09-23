@@ -29,7 +29,7 @@ export class Ad extends Model {
     comment: "状态",
     defaultValue: Is.True,
   })
-  status: number;
+  status: Is;
 
   @Column({
     type: DataType.INTEGER.UNSIGNED,

@@ -76,21 +76,21 @@ export class Product extends Model {
     comment: "是否新品",
     defaultValue: Is.False,
   })
-  new: number;
+  new: Is;
 
   @Column({
     type: DataType.TINYINT({ length: 1 }),
     comment: "是否推荐",
     defaultValue: Is.False,
   })
-  recommended: number;
+  recommended: Is;
 
   @Column({
     type: DataType.TINYINT({ length: 1 }),
     comment: "是否上架",
     defaultValue: Is.True,
   })
-  status: number;
+  status: Is;
 
   @Column({
     type: DataType.INTEGER.UNSIGNED,

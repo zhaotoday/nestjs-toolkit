@@ -66,5 +66,5 @@ export class AddressDto {
     description: "是否默认",
     example: Is.False,
   })
-  default: number;
+  default: Is;
 }

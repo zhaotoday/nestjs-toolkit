@@ -11,5 +11,5 @@ export class UserCoupon extends Model {
     comment: "是否已使用",
     defaultValue: Is.False,
   })
-  used: number;
+  used: Is;
 }

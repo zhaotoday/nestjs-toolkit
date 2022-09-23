@@ -50,5 +50,5 @@ export class Address extends Model {
     comment: "是否默认",
     defaultValue: Is.False,
   })
-  default: number;
+  default: Is;
 }

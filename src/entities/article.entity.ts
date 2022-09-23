@@ -47,21 +47,21 @@ export class Article extends Model {
     comment: "是否热门",
     defaultValue: Is.False,
   })
-  hot: number;
+  hot: Is;
 
   @Column({
     type: DataType.TINYINT({ length: 1 }),
     comment: "是否置顶",
     defaultValue: Is.False,
   })
-  top: number;
+  top: Is;
 
   @Column({
     type: DataType.TINYINT({ length: 1 }),
     comment: "状态",
     defaultValue: Is.True,
   })
-  status: number;
+  status: Is;
 
   @Column({
     type: DataType.INTEGER.UNSIGNED,

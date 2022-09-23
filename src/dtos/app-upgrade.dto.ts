@@ -50,5 +50,5 @@ export class AppUpgradeDto {
     description: "状态（上架、下架）",
     example: PublishStatus.On,
   })
-  status: string;
+  status: PublishStatus;
 }

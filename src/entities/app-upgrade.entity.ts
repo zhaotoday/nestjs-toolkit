@@ -55,5 +55,5 @@ export class AppUpgrade extends Model {
     comment: "状态（上架、下架）",
     defaultValue: Is.True,
   })
-  status: number;
+  status: Is;
 }
