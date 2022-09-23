@@ -6,7 +6,7 @@ export class AppUpgradeCheckDto {
     description: "平台",
     example: AppPlatform.Android,
   })
-  platform: string;
+  platform: AppPlatform;
 
   @ApiProperty({
     description: "版本名称",

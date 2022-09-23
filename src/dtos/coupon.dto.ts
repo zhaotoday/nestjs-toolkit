@@ -33,7 +33,7 @@ export class CouponDto {
     description: "类型",
     example: CouponType.Reduction,
   })
-  type: string;
+  type: CouponType;
 
   @ApiProperty({
     description: "抵扣金额",
@@ -51,7 +51,7 @@ export class CouponDto {
     description: "使用对象类型",
     example: CouponObjectType.All,
   })
-  objectType: string;
+  objectType: CouponObjectType;
 
   @ApiProperty({
     description: "指定商品分类 ID 集合",

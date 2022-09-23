@@ -19,5 +19,5 @@ export class DistributorApplicationDto {
     description: "审核状态",
     example: CheckStatus.Checking,
   })
-  status: number;
+  status: CheckStatus;
 }

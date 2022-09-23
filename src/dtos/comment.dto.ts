@@ -37,5 +37,5 @@ export class CommentDto {
     description: "状态",
     example: CheckStatus.Checking,
   })
-  status: number;
+  status: CheckStatus;
 }
