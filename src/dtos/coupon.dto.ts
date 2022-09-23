@@ -75,5 +75,5 @@ export class CouponDto {
     description: "状态",
     example: Is.True,
   })
-  status: number;
+  status: Is;
 }

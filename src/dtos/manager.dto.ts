@@ -32,5 +32,5 @@ export class ManagerDto {
     description: "状态",
     example: Is.True,
   })
-  status: number;
+  status: Is;
 }

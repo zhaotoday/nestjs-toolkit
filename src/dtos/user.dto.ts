@@ -123,5 +123,5 @@ export class UserDto {
     example: Is.True,
   })
   @ApiPropertyOptional()
-  status?: number;
+  status?: Is;
 }

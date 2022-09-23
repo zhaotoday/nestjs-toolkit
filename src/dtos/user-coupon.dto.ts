@@ -25,5 +25,5 @@ export class UserCouponDto {
     description: "是否已使用",
     example: Is.False,
   })
-  status: number;
+  status: Is;
 }

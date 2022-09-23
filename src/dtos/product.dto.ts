@@ -79,19 +79,19 @@ export class ProductDto {
     description: "是否新品",
     example: Is.False,
   })
-  new: number;
+  new: Is;
 
   @ApiProperty({
     description: "是否推荐",
     example: Is.False,
   })
-  recommended: number;
+  recommended: Is;
 
   @ApiProperty({
     description: "是否上架",
     example: Is.True,
   })
-  status: number;
+  status: Is;
 
   @ApiProperty({
     description: "排序",
