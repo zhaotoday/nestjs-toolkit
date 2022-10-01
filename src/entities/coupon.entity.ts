@@ -1,6 +1,7 @@
 import { Column, DataType, Model, Table } from "sequelize-typescript";
 import { Is } from "../enums/is.enum";
 import { CouponObjectType } from "../enums/coupon-object-type.enum";
+import { CouponType } from "../enums/coupon-type.enum";
 
 @Table({
   tableName: "coupons",
@@ -26,17 +27,23 @@ export class Coupon extends Model {
   description: string;
 
   @Column({
-    type: DataType.STRING(50),
+    type: DataType.ENUM.apply(null, Object.values(CouponType)),
     comment: "类型",
   })
-  type: string;
+  type: CouponType;
+
+  @Column({
+    type: DataType.STRING(100),
+    comment: "优惠码",
+  })
+  code: string;
 
   @Column({
     type: DataType.FLOAT({ length: 10 }),
     comment: "抵扣金额",
     defaultValue: 0,
   })
-  deductAmount: number;
+  amount: number;
 
   @Column({
     type: DataType.FLOAT({ length: 10 }),

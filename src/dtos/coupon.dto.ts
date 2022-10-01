@@ -36,10 +36,16 @@ export class CouponDto {
   type: CouponType;
 
   @ApiProperty({
+    description: "优惠码",
+    example: "double11",
+  })
+  code: string;
+
+  @ApiProperty({
     description: "抵扣金额",
     example: 100,
   })
-  deductAmount: number;
+  amount: number;
 
   @ApiProperty({
     description: "最低消费金额",
