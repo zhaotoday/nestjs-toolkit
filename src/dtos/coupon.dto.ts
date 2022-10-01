@@ -1,7 +1,6 @@
 import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { Is } from "../enums/is.enum";
 import { CouponType } from "../enums/coupon-type.enum";
-import { CouponObjectType } from "../enums/coupon-object-type.enum";
 
 export class CouponDto {
   @ApiProperty({
@@ -52,12 +51,6 @@ export class CouponDto {
     example: 100,
   })
   minConsumeAmount: number;
-
-  @ApiProperty({
-    description: "使用对象类型",
-    example: CouponObjectType.All,
-  })
-  objectType: CouponObjectType;
 
   @ApiProperty({
     description: "指定商品分类 ID 集合",

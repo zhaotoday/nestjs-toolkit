@@ -1,6 +1,5 @@
 import { Column, DataType, Model, Table } from "sequelize-typescript";
 import { Is } from "../enums/is.enum";
-import { CouponObjectType } from "../enums/coupon-object-type.enum";
 import { CouponType } from "../enums/coupon-type.enum";
 
 @Table({
@@ -51,13 +50,6 @@ export class Coupon extends Model {
     defaultValue: 0,
   })
   minConsumeAmount: number;
-
-  @Column({
-    type: DataType.STRING(50),
-    comment: "使用对象类型",
-    defaultValue: CouponObjectType.All,
-  })
-  objectType: string;
 
   @Column({
     type: DataType.JSON,

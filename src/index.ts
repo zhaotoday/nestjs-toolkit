@@ -98,7 +98,6 @@ export * from "./enums/app-platform.enum";
 export * from "./enums/blood-group.enum";
 export * from "./enums/certificate-type.enum";
 export * from "./enums/check-status.enum";
-export * from "./enums/coupon-object-type.enum";
 export * from "./enums/coupon-type.enum";
 export * from "./enums/dress-size.enum";
 export * from "./enums/gender.enum";
