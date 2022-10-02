@@ -70,7 +70,7 @@ export class Coupon extends Model {
   period: number;
 
   @Column({
-    type: DataType.TIME,
+    type: DataType.DATE,
     comment: "过期时间",
   })
   expiredAt: string;
