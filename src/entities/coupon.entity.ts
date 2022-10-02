@@ -80,7 +80,7 @@ export class Coupon extends Model {
     comment: "最大使用次数",
     defaultValue: 1,
   })
-  maxLimitTimes: number;
+  maxUseTimes: number;
 
   @Column({
     type: DataType.INTEGER,
