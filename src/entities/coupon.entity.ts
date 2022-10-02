@@ -70,10 +70,10 @@ export class Coupon extends Model {
   period: number;
 
   @Column({
-    type: DataType.BIGINT({ length: 13 }),
+    type: DataType.TIME,
     comment: "过期时间",
   })
-  expiredAt: number;
+  expiredAt: string;
 
   @Column({
     type: DataType.INTEGER,
