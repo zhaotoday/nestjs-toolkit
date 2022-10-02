@@ -77,9 +77,17 @@ export class Coupon extends Model {
 
   @Column({
     type: DataType.INTEGER,
+    comment: "最大使用次数",
     defaultValue: 1,
   })
-  useTimes: number;
+  maxLimitTimes: number;
+
+  @Column({
+    type: DataType.INTEGER,
+    comment: "已使用次数",
+    defaultValue: 1,
+  })
+  usedTimes: number;
 
   @Column({
     type: DataType.TINYINT({ length: 1 }),

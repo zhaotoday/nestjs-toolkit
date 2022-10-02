@@ -77,10 +77,16 @@ export class CouponDto {
   expiredAt: number;
 
   @ApiProperty({
-    description: "使用次数",
+    description: "最大使用次数",
     example: 1,
   })
-  useTimes: number;
+  maxUseTimes: number;
+
+  @ApiProperty({
+    description: "已使用次数",
+    example: 1,
+  })
+  usedTimes: number;
 
   @ApiProperty({
     description: "状态",
