@@ -65,9 +65,21 @@ export class Coupon extends Model {
 
   @Column({
     type: DataType.TINYINT({ length: 3 }),
-    comment: "有效期，单：位天",
+    comment: "有效期，单位：天",
   })
   period: number;
+
+  @Column({
+    type: DataType.BIGINT({ length: 13 }),
+    comment: "过期时间",
+  })
+  expiredAt: number;
+
+  @Column({
+    type: DataType.INTEGER,
+    defaultValue: 1,
+  })
+  useTimes: number;
 
   @Column({
     type: DataType.TINYINT({ length: 1 }),

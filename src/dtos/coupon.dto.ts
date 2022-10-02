@@ -71,6 +71,18 @@ export class CouponDto {
   period: number;
 
   @ApiProperty({
+    description: "过期时间",
+    example: 1581689999001,
+  })
+  expiredAt: number;
+
+  @ApiProperty({
+    description: "使用次数",
+    example: 1,
+  })
+  useTimes: number;
+
+  @ApiProperty({
     description: "状态",
     example: Is.True,
   })
