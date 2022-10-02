@@ -85,7 +85,7 @@ export class Coupon extends Model {
   @Column({
     type: DataType.INTEGER,
     comment: "已使用次数",
-    defaultValue: 1,
+    defaultValue: 0,
   })
   usedTimes: number;
 
