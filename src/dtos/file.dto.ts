@@ -1,4 +1,5 @@
 import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
+import { Is } from "../enums/is.enum";
 
 export class FileDto {
   @ApiProperty({
@@ -49,4 +50,10 @@ export class FileDto {
     example: "png",
   })
   readonly ext: string;
+
+  @ApiProperty({
+    description: "是否上传到服务器本地",
+    example: Is.False,
+  })
+  local: Is;
 }

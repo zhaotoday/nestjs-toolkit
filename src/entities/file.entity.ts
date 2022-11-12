@@ -59,7 +59,7 @@ export class File extends Model {
 
   @Column({
     type: DataType.TINYINT({ length: 1 }),
-    comment: "是否上传到本地",
+    comment: "是否上传到服务器本地",
     defaultValue: Is.False,
   })
   local: Is;
