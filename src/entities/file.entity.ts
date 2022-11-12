@@ -1,4 +1,5 @@
 import { Column, DataType, Model, Table } from "sequelize-typescript";
+import { Is } from "../enums/is.enum";
 
 @Table({
   tableName: "files",
@@ -55,4 +56,11 @@ export class File extends Model {
     comment: "后缀",
   })
   ext: string;
+
+  @Column({
+    type: DataType.TINYINT({ length: 1 }),
+    comment: "是否上传到本地",
+    defaultValue: Is.False,
+  })
+  local: Is;
 }
